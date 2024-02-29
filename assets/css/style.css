@@ -1452,6 +1452,14 @@ section {
   }
 }
 
+@media (width <= 1200px) {
+ #dashlogo {
+  min-height: none;
+  height: 30px;
+ }
+}
+
 #dashlogo {
   min-height: 150px;
 }
+

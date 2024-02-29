@@ -296,7 +296,7 @@ h6 {
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -304,7 +304,7 @@ h6 {
   .navbar ul {
     display: none;
   }
-}
+} */
 
 .navbar-mobile {
   position: fixed;

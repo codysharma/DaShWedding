@@ -410,6 +410,8 @@ h6 {
   margin-bottom: -90px;
 }
 
+
+
 #hero .hero-container {
   position: absolute;
   bottom: 0;
@@ -1444,8 +1446,16 @@ section {
   color: #fff;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 800px) {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
+  }
+  #hero {
+    background: linear-gradient(rgba(97, 109, 114, 0.5), rgba(55, 142, 181, 0.2)), url("../img/IMG_2631_portrait.jpg") top center;
+    background-size: cover;
+  }
+
+  .hero-container {
+    max-height: 100%;
   }
 }

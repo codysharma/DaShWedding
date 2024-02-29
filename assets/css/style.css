@@ -1452,11 +1452,15 @@ section {
   }
 }
 
-@media (width <= 1200px) {
+@media (width <= 800px) {
  #dashlogo {
   min-height: none;
   height: 30px;
  }
+ #hero {
+  background: linear-gradient(rgba(97, 109, 114, 0.5), rgba(55, 142, 181, 0.2)), url("../img/couplepicture_portrait.jpg") top center;
+  background-size: cover;
+}
 }
 
 #dashlogo {

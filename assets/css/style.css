@@ -126,6 +126,7 @@ h6 {
 .navbar {
   padding: 0;
   position: static;
+  height: 10vh;
 }
 
 .navbar ul {
@@ -405,7 +406,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  /* background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/couplepicture_01.jpg") top center; */
+  background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/couplepicture_04.jpg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -1451,33 +1452,6 @@ section {
   }
 }
 
-/* #savethedate {
-  position: relative;
+#dashlogo {
+  min-height: 150px;
 }
-
-#picturebackground {
-  width: 100%;
-}
-
-#text {
-  color: white;
-  position: relative;
-  z-index: 10;
-  font-size: 15rem;
-  top: 20%;
-}
-
-#background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-main {
-  background-image: url("../img/couplepicture_04.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  top: 0;
-  height: 100vh;
-} */

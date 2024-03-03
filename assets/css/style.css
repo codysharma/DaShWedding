@@ -1461,9 +1461,15 @@ section {
   background: linear-gradient(rgba(97, 109, 114, 0.5), rgba(55, 142, 181, 0.2)), url("../img/couplepicture_portrait.jpg") top center;
   background-size: cover;
 }
+#countdown {
+  display: none;
+}
 }
 
 #dashlogo {
   min-height: 150px;
 }
 
+#countdown {
+  width: 800px;
+}

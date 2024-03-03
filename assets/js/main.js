@@ -213,10 +213,10 @@
   new Swiper('.testimonials-slider', {
     speed: 600,
     loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false
+    // },
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
@@ -254,3 +254,48 @@
 
 })()
 
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function showSlides(num) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (num > slides.length) {
+      slideIndex = 1;
+  }    
+  if (num < 1) {
+      slideIndex = slides.length - 1;
+  }
+  // default to setting slides and dots as display: hidden/none
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  // set current slide and next slide to showing/emphasized
+  slides[slideIndex - 1].style.display = "inline-block";
+  if (slideIndex < slides.length) {
+      slides[slideIndex].style.display = "inline-block";
+  } else {
+      slides[0].style.display = "inline-block";
+  }
+
+  dots[slideIndex - 1].className += " active";
+  if (slideIndex === 1) {
+      dots[0].className += " active";
+  } else if (slideIndex === slides.length) {
+      dots[0].className += " active";
+  }
+}
+
+
+function plusSlides(num) {
+    showSlides(slideIndex += num);
+}
+
+function currentSlide(num) {
+    showSlides(slideIndex = num);
+}

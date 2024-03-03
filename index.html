@@ -48,11 +48,11 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#rsvp" style="color: #a84355;" id="rsvp-link">RSVP</a></li>
-          <li><a class="nav-link scrollto" href="#about" style="color: #497659;">Our Story</a></li>
-          <li><a class="nav-link scrollto" href="#venue" style="color: #e39845">Venue Location</a></li>
-          <li><a class="nav-link scrollto" href="#schedule" style="color: #6d425d">Schedule of Events</a></li>
-          <li><a class="nav-link scrollto" href="#travel" style="color: #5b7cb5">Travel and Stay</a></li>
+          <li><a class="nav-link scrollto" href="#rsvp" id="rsvp-link">RSVP</a></li>
+          <li><a class="nav-link scrollto" href="#aboutus" id="story-link">Our Story</a></li>
+          <li><a class="nav-link scrollto" href="#venue" id="venue-link">Venue and Travel</a></li>
+          <li><a class="nav-link scrollto" href="#schedule" id="schedule-link">Schedule of Events</a></li>
+          <li><a class="nav-link scrollto" href="#faqs" id="faqs-link">FAQs</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -64,12 +64,12 @@
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
       <h1>Damini and Shivang</h1>
-      <div id="countdown">
+      <div id="countdown" style="display: none;">
         <a href="https://logwork.com/countdown-4uid" class="countdown-timer" data-style="circles" data-timezone="Asia/Kolkata" data-textcolor="#ffffff" data-date="2024-12-27 00:00" data-background="#6d425d" data-digitscolor="#ffffff" data-unitscolor="#ffffff" aria-current="page">Wedding Countdown</a>
       </div>
 
 
-      <a href="#rsvp" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+      <a href="#rsvp" class="btn-get-started scrollto"><i class="bx bx-chevrons-down" id="get-started-arrows"></i></a>
     </div>
   </section><!-- End Landing -->
 
@@ -84,77 +84,94 @@
     </div>
 
   <h2>Please let us know your intention to attend by xxxxxx</h2>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScggTeefiVs8pGFqkb5mdtBTpjLi_RZ_hMqEVALP4zduV8fJg/viewform?usp=sf_link" class="about-btn">Link to Google Form<i class="bx bx-chevron-right"></i></a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScggTeefiVs8pGFqkb5mdtBTpjLi_RZ_hMqEVALP4zduV8fJg/viewform?usp=sf_link" class="about-btn" target="_blank" rel="noopener noreferrer">Link to Google Form<i class="bx bx-chevron-right"></i></a>
   </div>
 </section>
 <!-- End RSVP Section -->
 
   <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="section-title">
-              <h2 style="color: #497659;">Our Story</h2>
-            </div>
-            <!-- <div class="content">
-              <p>
-                Having met in 1989, they are here
-              </p>
-            </div> -->
+  <section id="aboutus" class="testimonials section-bg">
+    <div class="container" data-aos="fade-up" id="aboutus-container" >
+
+      <div class="section-title">
+        <h2 style="color: #497659;">Our Story</h2>
+      </div>  
+      <div class="slideshow-container">
+          <div class="mySlides" >
+            <img src="./assets/img/IMG_2631.jpg" class="aboutus-pictures">
+            <h3>Boston</h3>
+            <p>lorem ipsum blah blah blah</p>
           </div>
-          <div class="col-xl-7 d-flex align-items-stretch">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-receipt"></i>
-                  <h4>First date</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bx bx-cube-alt"></i>
-                  <h4>Long Distance</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bx bx-images"></i>
-                  <h4>San Francisco</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bx bx-shield"></i>
-                  <h4>Beatae veritatis</h4>
-                  <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                </div>
-              </div>
-            </div><!-- End .content-->
+
+          <div class="mySlides">
+            <img src="./assets/img/test-image1.jpg" class="aboutus-pictures">
+            <h3>Long Distance</h3>
+            <p>lorem ipsum blah blah blah</p>
           </div>
+
+          <div class="mySlides">
+            <img src="./assets/img/IMG_2631.jpg" class="aboutus-pictures">
+            <h3>Visiting</h3>
+            <p>lorem ipsum blah blah blah</p>
+          </div>
+
+          <div class="mySlides">
+            <img src="./assets/img/test-image1.jpg" class="aboutus-pictures">
+            <h3>A cool trip</h3>
+            <p>lorem ipsum blah blah blah</p>
+          </div>
+
+          <div class="mySlides">
+            <img src="./assets/img/IMG_2631.jpg" class="aboutus-pictures">
+            <h3>San Francisco</h3>
+            <p>lorem ipsum blah blah blah</p>
+          </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
+        <!-- <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+        </div> -->
 
       </div>
-    </section>
-  <!-- End About Section -->
+
+    </div>
+  </section>
+  <!-- End Testimonials Section -->
 
 <!-- venue section -->
 <section id="venue" class="resume">
   <div class="container" data-aos="fade-up" id="resume-background">
-
-    <div class="section-title">
-      <h2 style="color: #e39845;">Venue</h2>
-    </div>
-
     <div class="row">
       <div class="col-lg-6 ">
+        <div class="section-title">
+          <h2 style="color: #e39845;">Venue</h2>
+        </div>
         <h2>The ITC Rajputana</h2>
-        <a href="https://www.itchotels.com/in/en/itcrajputana-jaipur" class="about-btn">Hotel Website<i class="bx bx-chevron-right"></i></a>
-      </div>
-      <div class="col-lg-6 ">
+        <a href="https://www.itchotels.com/in/en/itcrajputana-jaipur" class="about-btn" target="_blank" rel="noopener noreferrer">Hotel Website<i class="bx bx-chevron-right"></i></a>
+        <br><br>
+        <a href="https://www.google.com/maps/place/ITC+Rajputana,+a+Luxury+Collection+Hotel,+Jaipur/@26.919166,75.7916931,15z/data=!4m8!3m7!1s0x0:0x288f3f3579fdbcc6!5m2!4m1!1i2!8m2!3d26.919166!4d75.7916931">Palace Road, Gopalbari, Jaipur, Rajasthan 302006, India</a>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.5168807927653!2d75.78905357593386!3d26.91882365982698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3f63be351e3%3A0x288f3f3579fdbcc6!2sITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%2C%20Jaipur!5e0!3m2!1sen!2sus!4v1708921148646!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+      <div class="col-lg-6 ">
+        <div class="section-title">
+          <h2 style="color: #e39845;">Travel</h2>
+        </div>
+        <h3>Nearest airports and info:</h3>
+        <br>
+        <h3>
+          Other activities/destinations:
+        </h3>
+        <ul>
+          <li>Description, with links to google maps and websites</li>
+        </ul>
+      </div>
     </div>
-
-
-  </div>
 </section>
 <!-- End of venue section -->
 
@@ -171,22 +188,21 @@
         <h3 class="resume-title">Thurendsay the 28th of December</h3>
         <div class="resume-item">
           <h4>Event title</h4>
-          <h5>Time</h5>
-          <p><em>Venue</em></p>
+          <p><em>Time</em></p>
           <ul>
+            <li>Venue</li>
             <li>Event details</li>
             <li>Dress code</li>
           </ul>
         </div>
       </div>
-    </div>
       <div class="col-lg-6">
         <h3 class="resume-title">Tueonduray the 29th of December</h3>
         <div class="resume-item">
           <h4>Event title</h4>
-          <h5>Time</h5>
-          <p><em>Venue</em></p>
+          <p><em>Time</em></p>
           <ul>
+            <li>Venue</li>
             <li>Event details</li>
             <li>Dress code</li>
           </ul>
@@ -198,54 +214,6 @@
   </div>
 </section>
 <!-- End of schedule -->
-
-    <!-- ======= Travel and Stay Section ======= -->
-    <section id="travel" class="services">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2 style="color: #5b7cb5">Travel and Stay</h2>
-          <p>Make a table like wireframe</p>
-        </div>
-
-        <!-- <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div> -->
-    </section>
-    <!-- End Services Section -->
 
     <!-- ======= Counts Section ======= -->
     <!-- <section id="counts" class="counts  section-bg">
@@ -450,6 +418,39 @@
     </section> -->
     <!-- End Team Section -->
 
+<!-- FAQs section -->
+<section id="faqs" class="resume">
+  <div class="container" data-aos="fade-up" id="resume-background">
+  <div class="section-title">
+    <h2 style="color: #5b7cb5;">FAQs</h2>
+    </div>
+    <div class="row">
+  <div class="col-lg-6">
+      <p><em>Can I ...?</em></p>
+      <p class="answer">Yes, you are ...</p>
+      <p><em>Can I ...?</em></p>
+      <p class="answer">Yes, you are ...</p>
+      <p><em>Can I ...?</em></p>
+      <p class="answer">Yes, you are ...</p>
+  </div>
+  <div class="col-lg-6">
+    <p><em>Can I ...?</em></p>
+    <p class="answer">Yes, you are ...</p>
+    <p><em>Can I ...?</em></p>
+    <p class="answer">Yes, you are ...</p>
+    <p><em>Can I ...?</em></p>
+    <p class="answer">Yes, you are ...</p>
+</div>
+</div>
+<div id="countdown" style="display: ;">
+  <a href="https://logwork.com/countdown-4uid" class="countdown-timer" data-style="circles" data-timezone="Asia/Kolkata" data-textcolor="#ffffff" data-date="2024-12-27 00:00" data-background="#6d425d" data-digitscolor="#ffffff" data-unitscolor="#ffffff" aria-current="page">Wedding Countdown</a>
+</div>
+</div>
+
+</section>
+
+<!-- end FAQs -->
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container" data-aos="fade-up">
@@ -475,7 +476,8 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 

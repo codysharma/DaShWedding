@@ -33,7 +33,7 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  /* right: 15px; */
   bottom: 15px;
   z-index: 998;
   background: #67b0d1;
@@ -41,6 +41,8 @@ h6 {
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
+  margin: auto;
+  left: 50%;
 }
 
 .back-to-top i {
@@ -1658,3 +1660,36 @@ background-color: #717171;
 #get-started-arrows {
   padding: 0px;
 }
+
+#travel-title {
+  margin-top: 20px;
+}
+
+#venue-info {
+}
+
+#schedule {
+/* background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/itc_rajputana.jpg") top center;
+background-size: contain;
+position: relative;
+background-repeat: no-repeat; */
+}
+
+#schedule .row {
+  align-items: center;
+  justify-content: center;
+}
+
+#schedule .resume-title {
+  /* background-color: rgba(216, 216, 216, 0.671);
+  border-radius: 20px; */
+  /* color: white; */
+}
+
+/* #schedule .resume-item {
+  background-color: rgba(216, 216, 216, 0.671);
+}
+
+#schedule .col-sm-6 {
+  max-width: 400px;
+} */

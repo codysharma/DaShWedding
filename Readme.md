@@ -1,4 +1,5 @@
 Todos:  
+-change color schema  
 -pictures  
 -sections  
 -nav bar links  

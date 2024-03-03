@@ -1473,3 +1473,11 @@ section {
 #countdown {
   width: 800px;
 }
+
+/* Disables the auto link on the coundown clock */
+[aria-current="page"] {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}

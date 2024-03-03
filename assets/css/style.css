@@ -1544,4 +1544,23 @@ section {
   width: 500px;
 }
 
-
+@media (width <= 800px) {
+  #dashlogo {
+   min-height: none;
+   height: 30px;
+  }
+  #hero {
+   background: linear-gradient(rgba(97, 109, 114, 0.5), rgba(55, 142, 181, 0.2)), url("../img/couple_portrait.jpg") top center;
+   background-size: cover;
+ }
+ #countdown {
+   display: none;
+ }
+ }
+ 
+ [aria-current="page"] {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}

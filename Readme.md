@@ -3,6 +3,7 @@ Todos:
 -pictures  
 -sections  
 -nav bar links  
+-style RSVP section
 -make itenerary have linked lines like portfolio site  
   
   

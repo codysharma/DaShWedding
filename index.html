@@ -36,16 +36,23 @@
     <div class="container d-flex align-items-center justify-content-between position-relative">
 
       <div class="logo">
-        <a href="index.html"><img src="assets/img/Logo-05.png" alt="" class="img-fluid"></a>
+        <div>
+          <a href="index.html"><img src="assets/img/Logo-05.png" alt="logo" class="img-fluid" id="logo-graphic"></a>
+        </div>
+        <div class="logo-text" id="logo-text-navbar">
+          <h3>Jaipur, India</h3>
+          <h3>December 28th - 29th, 2024</h3>
+        </div>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#rsvp">RSVP</a></li>
           <li><a class="nav-link scrollto" href="#about">Our Story</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#venue">Venue Location</a></li>
+          <li><a class="nav-link scrollto" href="#schedule">Schedule of Events</a></li>
+          <li><a class="nav-link scrollto" href="#travel">Travel and Stay</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -57,41 +64,62 @@
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
       <h1>Damini and Shivang</h1>
-      <h2></h2>
-      <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+      <h2>Days Left Until Wedding:</h2>
+      <div id="countdown">
+      <!-- <a href="https://logwork.com/countdown-4ui4" class="countdown-timer" data-style="circles" data-timezone="Asia/Kolkata" data-date="2024-12-27 00:00">Countdown</a>
+      </div> -->
+
+
+      <a href="#rsvp" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
     </div>
   </section><!-- End Landing -->
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
+<!-- RSVP Section -->
+<section id="rsvp" class="services">
+  <div class="container" data-aos="fade-up" id="resume-background">
+
+    <div class="section-title">
+      <h2>RSVP</h2>
+    </div>
+
+  <h2>Please let us know your intention to attend by xxxxxx</h2>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScggTeefiVs8pGFqkb5mdtBTpjLi_RZ_hMqEVALP4zduV8fJg/viewform?usp=sf_link" class="about-btn">Link to Google Form<i class="bx bx-chevron-right"></i></a>
+  </div>
+</section>
+<!-- End RSVP Section -->
+
+  <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
         <div class="row no-gutters">
           <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="content">
-              <h3>Our Story</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
+            <div class="section-title">
+              <h2>Our Story</h2>
             </div>
+            <!-- <div class="content">
+              <p>
+                Having met in 1989, they are here
+              </p>
+            </div> -->
           </div>
           <div class="col-xl-7 d-flex align-items-stretch">
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-receipt"></i>
-                  <h4>Corporis voluptates sit</h4>
+                  <h4>First date</h4>
                   <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                   <i class="bx bx-cube-alt"></i>
-                  <h4>Ullamco laboris nisi</h4>
+                  <h4>Long Distance</h4>
                   <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                   <i class="bx bx-images"></i>
-                  <h4>Labore consequatur</h4>
+                  <h4>San Francisco</h4>
                   <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
@@ -105,18 +133,83 @@
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
+  <!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <!-- <section id="services" class="services">
+<!-- venue section -->
+<section id="venue" class="resume">
+  <div class="container" data-aos="fade-up" id="resume-background">
+
+    <div class="section-title">
+      <h2>Venue</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 ">
+        <h2>The ITC Rajputana</h2>
+        <a href="https://www.itchotels.com/in/en/itcrajputana-jaipur" class="about-btn">Hotel Website<i class="bx bx-chevron-right"></i></a>
+      </div>
+      <div class="col-lg-6 ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.5168807927653!2d75.78905357593386!3d26.91882365982698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3f63be351e3%3A0x288f3f3579fdbcc6!2sITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%2C%20Jaipur!5e0!3m2!1sen!2sus!4v1708921148646!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<!-- End of venue section -->
+
+<!-- Schedule of Events section -->
+<section id="schedule" class="resume">
+  <div class="container" data-aos="fade-up" id="resume-background">
+
+    <div class="section-title">
+      <h2>Schedule of Events</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="resume-title">Thurendsay the 28th of December</h3>
+        <div class="resume-item">
+          <h4>Event title</h4>
+          <h5>Time</h5>
+          <p><em>Venue</em></p>
+          <ul>
+            <li>Event details</li>
+            <li>Dress code</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="col-lg-6">
+        <h3 class="resume-title">Tueonduray the 29th of December</h3>
+        <div class="resume-item">
+          <h4>Event title</h4>
+          <h5>Time</h5>
+          <p><em>Venue</em></p>
+          <ul>
+            <li>Event details</li>
+            <li>Dress code</li>
+          </ul>
+        </div>          
+      </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End of schedule -->
+
+    <!-- ======= Travel and Stay Section ======= -->
+    <section id="travel" class="services">
       <div class="container">
 
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Travel and Stay</h2>
+          <p>Make a table like wireframe</p>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
@@ -151,9 +244,29 @@
 
         </div>
 
+      </div> -->
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <!-- <section id="counts" class="counts  section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> consequuntur quae</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section> -->
-    <!-- End Services Section -->
+    <!-- End Counts Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <!-- <section id="portfolio" class="portfolio">
@@ -273,13 +386,78 @@
     </section> -->
     <!-- End Portfolio Section -->
 
+       <!-- ======= Team Section ======= -->
+    <!-- <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="150">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Team Section -->
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Contact Us</h2>
+          <p>Have further questions? Email us!</p>
         </div>
 
           <div class="col-lg-3 col-md-6">
@@ -287,19 +465,13 @@
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
               <p>contact@example.com</p>
-              <!-- Turn into a link? -->
+              <!-- Turn this div into a link? -->
             </div>
           </div>
 
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-6 ">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.5168807927653!2d75.78905357593386!3d26.91882365982698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3f63be351e3%3A0x288f3f3579fdbcc6!2sITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%2C%20Jaipur!5e0!3m2!1sen!2sus!4v1708921148646!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-
-        
+        <div class="row">      
 
         </div>
 
@@ -340,6 +512,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script src="https://cdn.logwork.com/widget/countdown.js"></script>
 </body>
 
 </html>

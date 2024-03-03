@@ -76,7 +76,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 24px 0;
-  background: rgba(103, 176, 209, 0.8);
+  background: rgba(121, 209, 103, 0.8);
 }
 
 #header.header-transparent {
@@ -84,8 +84,8 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(55, 142, 181, 0.9);
-  padding: 12px;
+  background: #bdbdbd;
+  padding: 10px;
 }
 
 #header .logo h1 {
@@ -1563,4 +1563,11 @@ section {
   cursor: default;
   text-decoration: none;
   color: black;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  background: rgba(255, 255, 255, 0.2);
 }

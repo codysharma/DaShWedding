@@ -1576,6 +1576,12 @@ section {
   max-width: 400px;
   align-items: center;
   margin: 20px;  
+  background-color: #ffffffa1;
+  border-radius: 20px;
+}
+
+.mySlides p {
+  padding-left: 10px;
 }
 
 .aboutus-container {
@@ -1593,6 +1599,7 @@ section {
   display: inline;
   align-items: center;
   left: 15%;
+  transition: 1s ease;
 }
 
 .prev, .next {
@@ -1621,7 +1628,7 @@ section {
 }
 
 .prev:hover, .next:hover {
-  background-color: #5bc0de;
+  background-color: #8fa598;
 }
 
 .dot {
@@ -1693,3 +1700,9 @@ background-repeat: no-repeat; */
 #schedule .col-sm-6 {
   max-width: 400px;
 } */
+
+#aboutus {
+  background-image: url("../img/ggbridge.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

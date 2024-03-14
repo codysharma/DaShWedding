@@ -535,7 +535,7 @@ section {
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
-  /* background: url(../img/section-title-bg.png) no-repeat; */
+  background: url(../img/bhangra-silhouette-1.jpg) no-repeat;
   z-index: -1;
 }
 
@@ -1573,7 +1573,11 @@ section {
 }
 
 #rsvp {
-  background-color: ;
+  /* background-image: url("../img/jalmahal-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: padding-box; */
 }
 
 .mySlides {
@@ -1597,19 +1601,19 @@ section {
 }
 
 .aboutus-pictures {
-  max-width: 600px;
+  max-width: 400px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  max-height: 300px;
+  max-height: 200px;
 }
 
 .slideshow-container {
-  max-width: 800px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
   display: inline;
   align-items: center;
-  /* left: 5%; */
+  left: 20%;
   transition: 1s ease;
 }
 

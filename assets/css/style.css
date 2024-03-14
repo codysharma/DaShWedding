@@ -1573,11 +1573,15 @@ section {
 }
 
 .mySlides {
-  max-width: 400px;
+  max-width: 600px;
   align-items: center;
   margin: 20px;  
   background-color: #ffffffa1;
   border-radius: 20px;
+}
+
+.mySlides h3 {
+  padding-left: 10px;
 }
 
 .mySlides p {
@@ -1589,16 +1593,18 @@ section {
 }
 
 .aboutus-pictures {
-  max-width: 400px;
+  max-width: 600px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .slideshow-container {
-  max-width: 400px;
+  max-width: 800px;
   position: relative;
   margin: auto;
   display: inline;
   align-items: center;
-  left: 15%;
+  /* left: 5%; */
   transition: 1s ease;
 }
 

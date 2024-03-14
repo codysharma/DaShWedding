@@ -34,7 +34,7 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  /* right: 15px; */
   bottom: 15px;
   z-index: 998;
   background: #67b0d1;
@@ -42,6 +42,8 @@ h6 {
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
+  margin: auto;
+  left: 50%;
 }
 
 .back-to-top i {
@@ -77,7 +79,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 24px 0;
-  background: rgba(103, 176, 209, 0.8);
+  background: rgba(121, 209, 103, 0.8);
 }
 
 #header.header-transparent {
@@ -85,8 +87,8 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(55, 142, 181, 0.9);
-  padding: 12px;
+  background: #71797E;
+  padding: 10px;
 }
 
 #header .logo h1 {
@@ -97,6 +99,19 @@ h6 {
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
+}
+
+.logo {
+  display: inline-flex;
+}
+
+#logo-graphic {
+  min-height: 80px;
+}
+
+.logo-text {
+  color: white;
+  margin-left: 1rem;
 }
 
 #header .logo h1 a,
@@ -154,6 +169,7 @@ h6 {
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
+  border-radius: 30px;
 }
 
 .navbar a i,
@@ -167,10 +183,11 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(247, 247, 247, 0.397);
+  /* color: black; */
 }
 
-.navbar .dropdown ul {
+/* .navbar .dropdown ul {
   display: block;
   position: absolute;
   left: 10px;
@@ -183,9 +200,9 @@ h6 {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
-}
+} */
 
-.navbar .dropdown ul li {
+/* .navbar .dropdown ul li {
   min-width: 200px;
 }
 
@@ -272,7 +289,7 @@ h6 {
   top: 0;
   left: 100%;
   visibility: visible;
-}
+} */
 
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
@@ -353,7 +370,7 @@ h6 {
 .navbar-mobile .getstarted:focus {
   margin: 15px;
 }
-
+/* 
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
@@ -398,7 +415,7 @@ h6 {
 .navbar-mobile .megamenu ul li .active,
 .navbar-mobile .megamenu ul li .active:hover {
   color: #67b0d1;
-}
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -406,7 +423,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/couplepicture_04.jpg") top center;
+  background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/IMG_2631.jpg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -576,8 +593,8 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center no-repeat;
-  background-size: cover;
+  /* background: url("../img/about-bg.jpg") center center no-repeat;
+  background-size: cover; */
   padding: 60px 0;
   position: relative;
 }
@@ -1010,8 +1027,8 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
+  max-width: 350px;
+  /* border-radius: 50%; */
   margin: 0 auto;
 }
 
@@ -1452,32 +1469,247 @@ section {
   }
 }
 
-@media (width <= 800px) {
- #dashlogo {
-  min-height: none;
-  height: 30px;
- }
- #hero {
-  background: linear-gradient(rgba(97, 109, 114, 0.5), rgba(55, 142, 181, 0.2)), url("../img/couplepicture_portrait.jpg") top center;
+.about-btn {
+  display: inline-block;
+  background: #5b7cb5;
+  padding: 6px 10px 8px 15px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #a84355;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #6d425d;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #a84355;
+}
+
+#schedule {
+  /* background: url("../img/Night-shot-poolside.jpg") center center no-repeat; */
   background-size: cover;
-}
-#countdown {
-  display: none;
-}
-}
-
-#dashlogo {
-  min-height: 150px;
+  background-color: lightgrey;
+  padding: 60px 0;
+  position: relative;
 }
 
 #countdown {
-  width: 800px;
+  width: 500px;
 }
 
-/* Disables the auto link on the coundown clock */
-[aria-current="page"] {
+@media (width <= 800px) {
+  #dashlogo {
+   min-height: none;
+   height: 30px;
+  }
+  #hero {
+   background: linear-gradient(rgba(97, 109, 114, 0.5), rgba(55, 142, 181, 0.2)), url("../img/couple_portrait.jpg") top center;
+   background-size: cover;
+ }
+ #countdown {
+   display: none;
+ }
+ }
+ 
+ [aria-current="page"] {
   pointer-events: none;
   cursor: default;
   text-decoration: none;
   color: black;
+}
+
+#rsvp {
+}
+
+.mySlides {
+  max-width: 600px;
+  align-items: center;
+  margin: 20px;  
+  background-color: #ffffffa1;
+  border-radius: 20px;
+}
+
+.mySlides h3 {
+  padding-left: 10px;
+}
+
+.mySlides p {
+  padding-left: 10px;
+}
+
+.aboutus-container {
+  display: flex;
+}
+
+.aboutus-pictures {
+  max-width: 600px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  display: inline;
+  align-items: center;
+  /* left: 5%; */
+  transition: 1s ease;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: #467659;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  text-decoration: none;
+}
+
+.next {
+  right: -3rem;
+  border-radius: 10px;
+}
+
+.prev {
+  left: -3rem;
+  border-radius: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #8fa598;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+.bx {
+  padding-left: 10px;
+}
+
+#faqs {
+  background-color: #fff1da;
+}
+
+#faqs .answer {
+  padding-left: 10px;
+}
+
+#faqs #countdown {
+  margin: auto;
+  background-color: darkgrey;
+  border-radius: 100px;
+}
+
+#get-started-arrows {
+  padding: 0px;
+}
+
+#travel-title {
+  margin-top: 20px;
+}
+
+#venue-info {
+}
+
+#schedule {
+/* background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/itc_rajputana.jpg") top center;
+background-size: contain;
+position: relative;
+background-repeat: no-repeat; */
+}
+
+#schedule .row {
+  align-items: center;
+  justify-content: center;
+}
+
+#schedule .resume-title {
+  /* background-color: rgba(216, 216, 216, 0.671);
+  border-radius: 20px; */
+  /* color: white; */
+}
+
+/* #schedule .resume-item {
+  background-color: rgba(216, 216, 216, 0.671);
+}
+
+#schedule .col-sm-6 {
+  max-width: 400px;
+} */
+
+#aboutus {
+  background-image: url("../img/ggbridge.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

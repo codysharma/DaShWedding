@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/Logo-05.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -36,11 +36,23 @@
     <div class="container d-flex align-items-center justify-content-between position-relative">
 
       <div class="logo">
-        <a href="index.html"><img src="assets/img/Logo-05.png" alt="" class="img-fluid" id="dashlogo"></a>
+        <div>
+          <a href="index.html"><img src="assets/img/Logo-05.png" alt="logo" class="img-fluid" id="logo-graphic"></a>
+        </div>
+        <div class="logo-text" id="logo-text-navbar">
+          <h3>Jaipur, India</h3>
+          <h3>December 28th - 29th, 2024</h3>
+        </div>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#rsvp" id="rsvp-link">RSVP</a></li>
+          <li><a class="nav-link scrollto" href="#aboutus" id="story-link">Our Story</a></li>
+          <li><a class="nav-link scrollto" href="#venue" id="venue-link">Venue and Travel</a></li>
+          <li><a class="nav-link scrollto" href="#schedule" id="schedule-link">Schedule of Events</a></li>
+          <li><a class="nav-link scrollto" href="#faqs" id="faqs-link">FAQs</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -52,17 +64,349 @@
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
       <h1>Damini and Shivang</h1>
-      <h3 style="color: white;">December 28th and 29th, Jaipur, India</h3>
-      <div id="countdown">
+      <div id="countdown" style="display: none;">
         <a href="https://logwork.com/countdown-4uid" class="countdown-timer" data-style="circles" data-timezone="Asia/Kolkata" data-textcolor="#ffffff" data-date="2024-12-27 00:00" data-background="#6d425d" data-digitscolor="#ffffff" data-unitscolor="#ffffff" aria-current="page">Wedding Countdown</a>
       </div>
-      <h3 style="color: white;">More details coming soon...</h3>
+      <div id="countdown" style="display: ;">
+        <a href="https://logwork.com/countdown-4uid" class="countdown-timer" data-style="circles" data-timezone="Asia/Kolkata" data-textcolor="#ffffff" data-date="2024-12-27 00:00" data-background="#6d425d" data-digitscolor="#ffffff" data-unitscolor="#ffffff" aria-current="page">Wedding Countdown</a>
+      </div>
+
+      <a href="#rsvp" class="btn-get-started scrollto"><i class="bx bx-chevrons-down" id="get-started-arrows"></i></a>
     </div>
 
     
   </section><!-- End Landing -->
 
   <main id="main">
+
+<!-- RSVP Section -->
+<section id="rsvp" class="services">
+  <div class="container" data-aos="fade-up" id="resume-background">
+
+    <div class="section-title" >
+      <h2 style="color: #a84355;">Intent to Attend</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-6" id="rsvp-div">
+        <h4>Please let us know your intention to attend by xxxxxx</h4>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScggTeefiVs8pGFqkb5mdtBTpjLi_RZ_hMqEVALP4zduV8fJg/viewform?usp=sf_link" class="about-btn" target="_blank" rel="noopener noreferrer">Link to Google Form<i class="bx bx-chevron-right"></i></a>
+        <p>Note: a more formal RSVP will follow</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End RSVP Section -->
+
+  <!-- ======= About Section ======= -->
+  <section id="aboutus" class="testimonials section-bg">
+    <div class="container" data-aos="fade-up" id="aboutus-container" >
+
+      <div class="section-title">
+        <h2 style="color: #497659;">Our Story</h2>
+      </div>  
+      <div class="slideshow-container">
+          <div class="mySlides" >
+            <img src="./assets/img/IMG_2631.jpg" class="aboutus-pictures">
+            <h3>Boston</h3>
+            <p>lorem ipsum blah blah blah</p>
+          </div>
+
+          <div class="mySlides">
+            <img src="./assets/img/test-image1.jpg" class="aboutus-pictures">
+            <h3>Long Distance</h3>
+            <p>lorem ipsum blah blah blah</p>
+          </div>
+
+          <div class="mySlides">
+            <img src="./assets/img/IMG_2631.jpg" class="aboutus-pictures">
+            <h3>Visiting</h3>
+            <p>lorem ipsum blah blah blah</p>
+          </div>
+
+          <div class="mySlides">
+            <img src="./assets/img/test-image1.jpg" class="aboutus-pictures">
+            <h3>A cool trip</h3>
+            <p>lorem ipsum blah blah blah</p>
+          </div>
+
+          <div class="mySlides">
+            <img src="./assets/img/IMG_2631.jpg" class="aboutus-pictures">
+            <h3>San Francisco</h3>
+            <p>lorem ipsum blah blah blah</p>
+          </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <!-- <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+        </div> -->
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Testimonials Section -->
+
+<!-- venue section -->
+<section id="venue" class="resume">
+  <div class="container" data-aos="fade-up" id="resume-background">
+    <div class="row">
+      <div class="col-lg-6" id="venue-info">
+        <div class="section-title">
+          <h2 style="color: #e39845;">Venue</h2>
+        </div>
+        <h2>The ITC Rajputana</h2>
+        <a href="https://www.itchotels.com/in/en/itcrajputana-jaipur" class="about-btn" target="_blank" rel="noopener noreferrer">Hotel Website<i class="bx bx-chevron-right"></i></a>
+        <br><br>
+        <a href="https://www.google.com/maps/place/ITC+Rajputana,+a+Luxury+Collection+Hotel,+Jaipur/@26.919166,75.7916931,15z/data=!4m8!3m7!1s0x0:0x288f3f3579fdbcc6!5m2!4m1!1i2!8m2!3d26.919166!4d75.7916931">Palace Road, Gopalbari, Jaipur, Rajasthan 302006, India</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.5168807927653!2d75.78905357593386!3d26.91882365982698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3f63be351e3%3A0x288f3f3579fdbcc6!2sITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%2C%20Jaipur!5e0!3m2!1sen!2sus!4v1708921148646!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="section-title" id="travel-title">
+          <h2 style="color: #e39845;">Travel</h2>
+        </div>
+        <h3>Nearest airports and info:</h3>
+        <br>
+        <h3>
+          Other activities/destinations:
+        </h3>
+        <ul>
+          <li>Description, with links to google maps and websites</li>
+        </ul>
+      </div>
+    </div>
+</section>
+<!-- End of venue section -->
+
+<!-- Schedule of Events section -->
+<section id="schedule" class="resume">
+  <div class="container" data-aos="fade-up" id="resume-background">
+
+    <div class="section-title">
+      <h2 style="color: #6d425d">Schedule of Events</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 class="resume-title">Thursday the 28th of December</h3>
+        <div class="resume-item">
+          <h4>Event title</h4>
+          <p><em>Time</em></p>
+          <ul>
+            <li>Venue</li>
+            <li>Event details</li>
+            <li>Dress code</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <h4>Event 2 title</h4>
+          <p><em>Time</em></p>
+          <ul>
+            <li>Venue</li>
+            <li>Event details</li>
+            <li>Dress code</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h3 class="resume-title">Friday the 29th of December</h3>
+        <div class="resume-item">
+          <h4>Event title</h4>
+          <p><em>Time</em></p>
+          <ul>
+            <li>Venue</li>
+            <li>Event details</li>
+            <li>Dress code</li>
+          </ul>
+        </div>          
+      </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End of schedule -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Portfolio Section -->
+
+<!-- FAQs section -->
+<section id="faqs" class="resume">
+  <div class="container" data-aos="fade-up" id="resume-background">
+  <div class="section-title">
+    <h2 style="color: #5b7cb5;">FAQs</h2>
+    </div>
+    <div class="row">
+  <div class="col-lg-6">
+      <p><em>Do you have a registry?</em></p>
+      <p class="answer">Something something something. Link?</p>
+      <p><em>Can I ...?</em></p>
+      <p class="answer">Yes, you are ...</p>
+      <p><em>Can I ...?</em></p>
+      <p class="answer">Yes, you are ...</p>
+  </div>
+  <div class="col-lg-6">
+    <p><em>Can I ...?</em></p>
+    <p class="answer">Yes, you are ...</p>
+    <p><em>Can I ...?</em></p>
+    <p class="answer">Yes, you are ...</p>
+    <p><em>Can I ...?</em></p>
+    <p class="answer">Yes, you are ...</p>
+</div>
+</div>
+</div>
+
+</section>
+<!-- end FAQs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>Have further questions? Email us!</p>
+        </div>
+
+          <div class="col-lg-3 col-md-6">
+            <a href="mailto:daminineedsmoreemails@example.com">
+            <div class="info-box mb-4">
+              <i class="bx bx-envelope"></i>
+              <p>daminineedsmoreemails@example.com</p>
+            </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="row">      
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -81,8 +425,6 @@
   <script src="assets/js/main.js"></script>
 
   <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-
-
 </body>
 
 </html>

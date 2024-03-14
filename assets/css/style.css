@@ -459,6 +459,10 @@ h6 {
   text-shadow: -1px 0 2px #2f4d5a;
 }
 
+#hero h3 {
+  color: white;
+}
+
 #hero .btn-get-started {
   font-size: 36px;
   display: inline-block;
@@ -531,7 +535,7 @@ section {
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
-  background: url(../img/section-title-bg.png) no-repeat;
+  /* background: url(../img/section-title-bg.png) no-repeat; */
   z-index: -1;
 }
 
@@ -920,7 +924,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(103, 176, 209, 0.95);
+  background: rgb(64, 162, 207);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
@@ -1596,6 +1600,7 @@ section {
   max-width: 600px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  max-height: 300px;
 }
 
 .slideshow-container {
@@ -1678,6 +1683,13 @@ background-color: #717171;
   margin-top: 20px;
 }
 
+#venue {
+  background: url("../img/jalmahal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 #venue-info {
 }
 
@@ -1711,4 +1723,5 @@ background-repeat: no-repeat; */
   background-image: url("../img/ggbridge.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+
 }

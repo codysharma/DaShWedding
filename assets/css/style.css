@@ -925,6 +925,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: rgb(64, 162, 207);
+  
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
@@ -942,6 +943,28 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
+}
+
+.portfolio-wrap:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.charities-links:hover {
+
+}
+
+
+.charity {
+  max-width: 400px;
+  max-height: 400px;
+  padding: 20px;
+  transition: .3s;
+}
+
+.charity:hover {
+  transform: scale(1.1);
+  transition: .3s;
+  opacity: .5;
 }
 
 /*--------------------------------------------------------------
@@ -1688,9 +1711,9 @@ background-color: #717171;
 }
 
 #venue {
-  background: url("../img/jalmahal.jpg");
+  /* background: url("../img/jalmahal.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 
 }
 
@@ -1698,10 +1721,9 @@ background-color: #717171;
 }
 
 #schedule {
-/* background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/itc_rajputana.jpg") top center;
-background-size: contain;
-position: relative;
-background-repeat: no-repeat; */
+  background: url("../img/jalmahal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #schedule .row {

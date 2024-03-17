@@ -1602,6 +1602,12 @@ section {
    display: none;
  }
  }
+
+ @media (min-width:801px) and (max-width:1500px) {
+  #hero {
+    background-position-x: right;
+  }
+ }
  
  [aria-current="page"] {
   pointer-events: none;
@@ -1753,20 +1759,6 @@ background-color: #717171;
   align-items: center;
   justify-content: center;
 }
-
-#schedule .resume-title {
-  /* background-color: rgba(216, 216, 216, 0.671);
-  border-radius: 20px; */
-  /* color: white; */
-}
-
-/* #schedule .resume-item {
-  background-color: rgba(216, 216, 216, 0.671);
-}
-
-#schedule .col-sm-6 {
-  max-width: 400px;
-} */
 
 #aboutus {
   background-image: url("../img/ggbridge_bg.jpg");

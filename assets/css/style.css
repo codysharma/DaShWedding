@@ -535,7 +535,7 @@ section {
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
-  background: url(../img/bhangra-silhouette-abstract-01.png) no-repeat;
+  /* background: url(../img/bhangra-silhouette-abstract-01.png) no-repeat; */
   background-size: contain;
   background-position: center;
   z-index: -1;
@@ -974,10 +974,10 @@ section {
 }
 
 #gifts {
-  /* background-image: url("../img/joshuatree_bg.jpg");
+  background-image: url("../img/joshuatree_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 }
 
 /*--------------------------------------------------------------
@@ -1528,7 +1528,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #a84355;
+  border-left: 2px solid #6d425d;
   position: relative;
 }
 
@@ -1572,30 +1572,17 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #a84355;
+  border: 2px solid #6d425d;
 }
 
 #schedule {
-  background-image: url("../img/antelope.jpg");
+  background-image: url("../img/antelope_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: lightgrey;
   padding: 60px 0;
   position: relative;
-}
-
-#schedule-items {
-  z-index: -10;
-}
-
-#schedule:hover {
-  background-image: url("../img/antelope_bg.jpg");
-
-  #schedule-items {
-    z-index: 0;
-  };
-
 }
 
 #countdown {
@@ -1613,13 +1600,6 @@ section {
  }
  #countdown {
    display: none;
- }
- #schedule {
-  background-image: url("../img/antelope_bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: lightgrey;
  }
  }
  
@@ -1725,12 +1705,17 @@ background-color: #717171;
 
 #faqs {
   background-color: #fff1da;
+  background: url("../img/familyportrait_portrait_bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -100px;
 }
 
-#faq1 {
-  /* background-image: url("../img/group_antelope.jpg");
-  background-size: contain;
-  background-repeat: no-repeat; */
+@media (max-width: 1500px) {
+  #faqs {
+    background-size: cover;
+    background-position: top;
+  }
 }
 
 #faqs .answer {
@@ -1784,7 +1769,7 @@ background-color: #717171;
 } */
 
 #aboutus {
-  background-image: url("../img/ggbridge.jpeg");
+  background-image: url("../img/ggbridge_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 

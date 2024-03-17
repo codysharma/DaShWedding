@@ -1607,6 +1607,9 @@ section {
   #hero {
     background-position-x: right;
   }
+  .slideshow-container {
+
+  }
  }
  
  [aria-current="page"] {
@@ -1667,7 +1670,7 @@ section {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  margin-top: -10rem;
   color: white;
   background-color: #467659;
   font-weight: bold;

@@ -535,9 +535,9 @@ section {
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
-  /* background: url(../img/bhangra-silhouette-1.png) no-repeat;
-  background-position-x: -10px; */
+  background: url(../img/bhangra-silhouette-abstract-01.png) no-repeat;
   background-size: contain;
+  background-position: center;
   z-index: -1;
 }
 
@@ -974,10 +974,10 @@ section {
 }
 
 #gifts {
-  background-image: url("../img/joshuatree_bg.jpg");
+  /* background-image: url("../img/joshuatree_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /*--------------------------------------------------------------
@@ -1788,4 +1788,12 @@ background-color: #717171;
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+
+#hotel-address {
+  color: black;
+}
+
+#hotel-address:hover {
+color: darkgrey;
 }

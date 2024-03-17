@@ -535,8 +535,14 @@ section {
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
-  background: url(../img/bhangra-silhouette-1.jpg) no-repeat;
+  /* background: url(../img/bhangra-silhouette-1.png) no-repeat;
+  background-position-x: -10px; */
+  background-size: contain;
   z-index: -1;
+}
+
+.title-picture {
+  height: 50px;
 }
 
 .section-title p {
@@ -964,7 +970,14 @@ section {
 .charity:hover {
   transform: scale(1.1);
   transition: .3s;
-  opacity: .5;
+  opacity: .7;
+}
+
+#gifts {
+  background-image: url("../img/joshuatree_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*--------------------------------------------------------------
@@ -1563,11 +1576,26 @@ section {
 }
 
 #schedule {
-  /* background: url("../img/Night-shot-poolside.jpg") center center no-repeat; */
+  background-image: url("../img/antelope.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   background-color: lightgrey;
   padding: 60px 0;
   position: relative;
+}
+
+#schedule-items {
+  z-index: -10;
+}
+
+#schedule:hover {
+  background-image: url("../img/antelope_bg.jpg");
+
+  #schedule-items {
+    z-index: 0;
+  };
+
 }
 
 #countdown {
@@ -1586,6 +1614,13 @@ section {
  #countdown {
    display: none;
  }
+ #schedule {
+  background-image: url("../img/antelope_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: lightgrey;
+ }
  }
  
  [aria-current="page"] {
@@ -1596,15 +1631,15 @@ section {
 }
 
 #rsvp {
-  /* background-image: url("../img/jalmahal-bg.jpg");
+  background-image: url("../img/pjs_landscape_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-clip: padding-box; */
+  background-clip: padding-box;
 }
 
 .mySlides {
-  max-width: 600px;
+  max-width: 400px;
   align-items: center;
   margin: 20px;  
   background-color: #ffffffa1;
@@ -1692,6 +1727,12 @@ background-color: #717171;
   background-color: #fff1da;
 }
 
+#faq1 {
+  /* background-image: url("../img/group_antelope.jpg");
+  background-size: contain;
+  background-repeat: no-repeat; */
+}
+
 #faqs .answer {
   padding-left: 10px;
 }
@@ -1711,9 +1752,9 @@ background-color: #717171;
 }
 
 #venue {
-  /* background: url("../img/jalmahal.jpg");
+  background: url("../img/jalmahal.jpg");
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 
 }
 
@@ -1721,9 +1762,6 @@ background-color: #717171;
 }
 
 #schedule {
-  background: url("../img/jalmahal.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #schedule .row {

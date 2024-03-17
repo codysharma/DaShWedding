@@ -1562,6 +1562,12 @@ section {
    display: none;
  }
  }
+
+ @media (min-width:801px) and (max-width:1500px) {
+  #hero {
+    background-position-x: right;
+  }
+ }
  
  [aria-current="page"] {
   pointer-events: none;

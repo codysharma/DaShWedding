@@ -1724,3 +1724,13 @@ background-repeat: no-repeat; */
 .hero-container h4,p {
   color: white;
 }
+
+#intent-div {
+  position: absolute;
+  bottom: 10px;
+}
+
+#welcome {
+  position: absolute;
+  top: 30%;
+}

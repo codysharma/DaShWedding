@@ -1830,6 +1830,7 @@ color: darkgrey;
 .album-picture {
   /* max-width: 30% */
   height: 100vh;
+  width: 30%;
   top: 0;
   left: 0;
   position: fixed;

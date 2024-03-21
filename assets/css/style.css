@@ -1,6 +1,11 @@
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  /* color: #444444; */
+  /* display: flex;
+  justify-content: flex-end; */
+  display: grid;
+  grid-template-columns: 30% 70%;
+  position: relative;
 }
 
 a {
@@ -23,7 +28,11 @@ h6 {
 }
 
 #main {
-  margin-top: 90px;
+  margin-top: 0px;
+  /* width: 70%; */
+  /* display: inline-block; */
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
 
 /*--------------------------------------------------------------
@@ -77,8 +86,9 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 24px 0;
+  padding: 5px 0;
   background: rgba(121, 209, 103, 0.8);
+  width: 100%;
 }
 
 #header.header-transparent {
@@ -106,6 +116,7 @@ h6 {
 
 #logo-graphic {
   min-height: 80px;
+  min-width: 80px;
 }
 
 .logo-text {
@@ -129,6 +140,7 @@ h6 {
   #header.header-scrolled {
     padding: 15px 0;
   }
+
 }
 
 /*--------------------------------------------------------------
@@ -297,6 +309,8 @@ h6 {
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
+  
+
 }
 
 /**
@@ -315,9 +329,11 @@ h6 {
   .mobile-nav-toggle {
     display: block;
   }
-
   .navbar ul {
     display: none;
+  }
+  #logo-text-navbar h3{
+    font-size: large;
   }
 }
 
@@ -683,6 +699,13 @@ section {
 @media (max-width: 1200px) {
   .about .content {
     padding-right: 0;
+  }
+  .logo-text h3{
+    font-size: medium;
+  }
+  #logo-graphic {
+    max-width: 50px;
+    max-height: 50px;
   }
 }
 
@@ -1357,6 +1380,8 @@ section {
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+  width: 100%;
+  display: none;
 }
 
 #footer .footer-top {
@@ -1627,6 +1652,10 @@ section {
   background-clip: padding-box;
 }
 
+#rsvp .section-title {
+  padding-top: 40px;
+}
+
 .mySlides {
   max-width: 400px;
   align-items: center;
@@ -1733,7 +1762,7 @@ background-color: #717171;
 
 #faqs #countdown {
   margin: auto;
-  background-color: darkgrey;
+  /* background-color: darkgrey; */
   border-radius: 100px;
 }
 
@@ -1776,4 +1805,40 @@ background-color: #717171;
 
 #hotel-address:hover {
 color: darkgrey;
+}
+
+#left-main {
+  /* background-color: #18d26e; */
+  /* width: 30%; */
+  /* display: inline-block; */
+  grid-column-start: 1;
+  grid-column-end: 1;
+  /* background-image: url(../img/couple_2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* height: 100%; */
+  /* width: 100%; */
+  z-index: -11;
+}
+
+#photo-album {
+}
+
+.album-picture {
+  /* max-width: 30% */
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+#album-picture-1 {
+  z-index: 2;
+}
+
+#album-picture-2 {
+  z-index: 3;
 }

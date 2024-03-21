@@ -296,3 +296,25 @@ function plusSlides(num) {
 function currentSlide(num) {
     showSlides(slideIndex = num);
 }
+
+// Show new picture on scroll 
+window.onscroll = function() {showImageOnScroll()};
+
+function showImageOnScroll() {
+  var newImage = document.getElementById("album-picture-2");
+  var oldImage = document.getElementById("album-picture-1");
+  
+
+  if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1700) {
+    newImage.style.transition = "opacity 1s ease";
+    oldImage.style.transition = "opacity 1s ease";
+    newImage.style.opacity = "1"; 
+    oldImage.style.opacity = '0';
+  } else {
+    newImage.style.transition = "opacity 1s ease";
+    oldImage.style.transition = "opacity 1s ease";
+    newImage.style.opacity = "0"; 
+    oldImage.style.opacity = '1';
+  }
+
+}

@@ -1843,3 +1843,12 @@ color: darkgrey;
 #album-picture-2 {
   z-index: 1;
 }
+
+@media (width <= 1000px) {
+  #left-main {
+    display: none;
+  }
+  body {
+    grid
+  }
+}

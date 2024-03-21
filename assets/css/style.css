@@ -1844,11 +1844,19 @@ color: darkgrey;
   z-index: 1;
 }
 
-@media (width <= 1000px) {
+@media (width <= 1300px) {
   #left-main {
     display: none;
+    grid-column-start: 0;
+    grid-column-end: 0;
   }
   body {
-    grid
+    display: block;
+    grid-template-columns: ;
+    position: ;
+  }
+  main {
+    grid-column-start: ;
+    grid-column-end: ;
   }
 }

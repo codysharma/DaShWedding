@@ -267,26 +267,37 @@ function showSlides(num) {
   if (num < 1) {
       slideIndex = slides.length;
   }
-  // default to setting slides as display: hidden/none
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
 
-  // set current slide to showing/emphasized
-  slides[slideIndex - 1].style.display = "inline-block";
-  // set next slide
-  if (slideIndex < slides.length) {
-      slides[slideIndex].style.display = "inline-block";
-  } else {
-      slides[0].style.display = "inline-block";
+  const updatedSlideDisplay = () => {
+    // const screenWidth = window.innerWidth;
+    const screenWidth = document.getElementById("aboutus").offsetWidth
+    if (screenWidth < 1200) {
+      num = 1;
+    } else {
+      num = 2; 
+    }
+  
+    // default to setting slides as display: none
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+  
+    // set current slide to showing/emphasized
+    slides[slideIndex - 1].style.display = "inline-block";
+  
+    // set next slides
+    for (i = 1; i < num; i++) {
+      if (slideIndex + i < slides.length) {
+        slides[slideIndex + i].style.display = "inline-block";
+      } else {
+        slides[(slideIndex + i) % slides.length].style.display = "inline-block";
+      }
+    }
   }
-  // set slide after next
-//   if (slideIndex + 1 < slides.length) {
-//     slides[slideIndex + 1].style.display = "inline-block";
-// } else {
-//     // If there's no slide after the next (at or near end of array), loop back to start
-//     slides[(slideIndex + 1) % slides.length].style.display = "inline-block";
-// }
+  updatedSlideDisplay();
+
+  window.addEventListener('resize', updatedSlideDisplay)
+  
 }
 
 function plusSlides(num) {

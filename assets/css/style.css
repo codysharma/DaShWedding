@@ -106,6 +106,7 @@ h6 {
 
 #logo-graphic {
   min-height: 80px;
+  min-width: 80px;
 }
 
 .logo-text {
@@ -317,6 +318,9 @@ h6 {
   }
 
   .navbar ul {
+    display: none;
+  }
+  #logo-graphic {
     display: none;
   }
 }
@@ -683,6 +687,9 @@ section {
 @media (max-width: 1200px) {
   .about .content {
     padding-right: 0;
+  }
+  .logo-text h3{
+    font-size: medium;
   }
 }
 
@@ -1220,6 +1227,9 @@ section {
 @media (max-width: 992px) {
   .team .member {
     margin-bottom: 110px;
+  }
+  .logo-text h3{
+    font-size: 28px;
   }
 }
 

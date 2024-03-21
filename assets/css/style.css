@@ -526,7 +526,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f4f9fc;
+  /* background-color: #f4f9fc; */
 }
 
 .section-title {
@@ -541,6 +541,13 @@ section {
   margin-bottom: 30px;
   color: #2f4d5a;
   z-index: 2;
+  background-image: url(../img/bhangra-silhouette-abstract-01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+  /* background-color: #18d26e; */
+  border-radius: 30px;
+  max-height: 50px;
 }
 
 .section-title h2::after {
@@ -997,10 +1004,16 @@ section {
 }
 
 #gifts {
-  background-image: url("../img/joshuatree_bg.jpg");
+  /* background-image: url("../img/joshuatree_bg.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+    background: url("../img/familyportrait_portrait_bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -20px;
+
 }
 
 /*--------------------------------------------------------------
@@ -1601,11 +1614,11 @@ section {
 }
 
 #schedule {
-  background-image: url("../img/antelope_bg.jpg");
+  /* background-image: url("../img/antelope_bg.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   padding: 60px 0;
   position: relative;
 }
@@ -1742,8 +1755,8 @@ background-color: #717171;
 }
 
 #faqs {
-  background-color: #fff1da;
-  background: url("../img/familyportrait_portrait_bg.png") no-repeat;
+  /* background-color: #fff1da; */
+  /* background: url("../img/familyportrait_portrait_bg.png") no-repeat; */
   background-size: cover;
   background-position: center;
   background-position-y: -100px;
@@ -1775,9 +1788,11 @@ background-color: #717171;
 }
 
 #venue {
-  background: url("../img/jalmahal.jpg");
+  /* background: url("../img/jalmahal.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+
+  
 
 }
 
@@ -1793,7 +1808,7 @@ background-color: #717171;
 }
 
 #aboutus {
-  background-image: url("../img/ggbridge_bg.jpg");
+  /* background-image: url("../img/ggbridge_bg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -1859,4 +1874,10 @@ color: darkgrey;
     grid-column-start: ;
     grid-column-end: ;
   }
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+  align-items: center;
 }

@@ -1270,7 +1270,11 @@ section {
 --------------------------------------------------------------*/
 .contact {
   padding-bottom: 80px;
-}
+    background-image: url("../img/pjs_landscape_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
 .contact .info-box {
   color: #444444;
@@ -1388,6 +1392,13 @@ section {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (width <=600px ) {
+  .contact {
+    background-size: contain;
+    background-position-y: -50%;
   }
 }
 
@@ -1664,7 +1675,7 @@ section {
 }
 
 #rsvp {
-  background-image: url("../img/pjs_landscape_bg.jpg");
+  /* background-image: url("../img/pjs_landscape_bg.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1886,4 +1897,5 @@ hr {
   width: 80%;
   margin: auto;
   align-items: center;
+  display: none;
 }

@@ -6,6 +6,11 @@ body {
   display: grid;
   grid-template-columns: 30% 70%;
   position: relative;
+  background-image: url(../img/antelope_bg.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
 }
 
 a {
@@ -33,6 +38,7 @@ h6 {
   /* display: inline-block; */
   grid-column-start: 2;
   grid-column-end: 2;
+
 }
 
 /*--------------------------------------------------------------
@@ -1009,7 +1015,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 
-    background: url("../img/familyportrait_portrait_bg.png") no-repeat;
+    /* background: url("../img/familyportrait_portrait_bg.png") no-repeat; */
     background-size: cover;
     background-position: center;
     background-position-y: -20px;

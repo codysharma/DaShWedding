@@ -77,11 +77,14 @@
    */
   let selectHeader = select('#header')
   if (selectHeader) {
+    let navbar = document.getElementById('navbar')
     const headerScrolled = () => {
       if (window.scrollY > 100) {
+        navbar.style.display = "inline"
         selectHeader.classList.add('header-scrolled')
       } else {
         selectHeader.classList.remove('header-scrolled')
+        navbar.style.display = "none"
       }
     }
     window.addEventListener('load', headerScrolled)
@@ -307,3 +310,4 @@ function plusSlides(num) {
 function currentSlide(num) {
     showSlides(slideIndex = num);
 }
+

@@ -523,15 +523,18 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-top: 15em;
+
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
   position: relative;
   margin-bottom: 30px;
   color: #2f4d5a;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
 }
 
@@ -1799,42 +1802,35 @@ background-color: #717171;
 color: darkgrey;
 }
 
-#picture-title-venue {
-  background-image: url(../img/antelope.jpg);
+.picture-title {
+  height: 40em;
   background-size: cover;
   background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+
+#picture-title-venue {
+  background-image: url(../img/antelope.jpg);
   background-position-y: 20%;
-  min-height: 40%;
 }
 
 #picture-title-travel{
   background-image: url(../img/joshuatree.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position-y: 35%;
-  min-height: 40%;
 }
 
 #picture-title-schedule{
   background-image: url(../img/greatsanddunes.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position-y: 35%;
-  min-height: 40%;
 }
 
 #picture-title-gifts{
   background-image: url(../img/horseshoebend.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position-y: 35%;
-  min-height: 40%;
 }
 
 #picture-title-faqs{
   background-image: url(../img/familyportrait_portrait_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position-y: 5%;
-  min-height: 40%;
 }

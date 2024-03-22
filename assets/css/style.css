@@ -33,6 +33,20 @@ h6 {
   grid-column-end: 1;
 }
 
+.left-picture {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#left-picture-1 {
+  z-index: 3;
+}
+
+#left-picture-2 {
+  z-index: 4;
+}
+
 #right-main {
   grid-column-start: 2;
   grid-column-end: 2;
@@ -1811,12 +1825,15 @@ background-color: #717171;
 color: darkgrey;
 }
 
+.picture-title {
+  height: 100px;
+}
+
 #picture-title-venue {
   background-image: url(../img/antelope.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 20%;
-  min-height: 40%;
 }
 
 #picture-title-travel{
@@ -1824,7 +1841,6 @@ color: darkgrey;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 35%;
-  min-height: 40%;
 }
 
 #picture-title-schedule{
@@ -1832,7 +1848,6 @@ color: darkgrey;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 35%;
-  min-height: 40%;
 }
 
 #picture-title-gifts{
@@ -1840,7 +1855,6 @@ color: darkgrey;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 35%;
-  min-height: 40%;
 }
 
 #picture-title-faqs{
@@ -1848,5 +1862,4 @@ color: darkgrey;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 5%;
-  min-height: 40%;
 }

@@ -520,6 +520,9 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  background-image: url(../img/antelope_bg.jpg);
+  background-position: center;
+  width: 100%;
 }
 
 .section-title h2 {
@@ -1586,13 +1589,17 @@ section {
 }
 
 #schedule {
-  background-image: url("../img/antelope_bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: lightgrey;
   padding: 60px 0;
   position: relative;
+}
+
+#schedule::before {
+  position: absolute;
+  background-image: url("../img/antelope_bg.jpg");
+}
+
+#schedule-title {
+
 }
 
 #countdown {
@@ -1756,9 +1763,9 @@ background-color: #717171;
 }
 
 #venue {
-  background: url("../img/jalmahal.jpg");
+  /* background: url("../img/jalmahal.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 
 }
 
@@ -1774,9 +1781,13 @@ background-color: #717171;
 }
 
 #aboutus {
-  background-image: url("../img/ggbridge_bg.jpg");
+ 
+}
+
+#our-story-title {
+  /* background-image: url("../img/ggbridge_bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 
 }
 

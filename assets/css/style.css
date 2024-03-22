@@ -6,11 +6,11 @@ body {
   display: grid;
   grid-template-columns: 30% 70%;
   position: relative;
-  background-image: url(../img/antelope_bg.jpg);
+  /* background-image: url(../img/antelope_bg.jpg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment:fixed;
+  background-attachment:fixed; */
 }
 
 a {

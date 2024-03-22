@@ -425,7 +425,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/IMG_2631.jpg") top center;
+  background: url("../img/IMG_2631.jpg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -463,8 +463,12 @@ h6 {
   text-shadow: -1px 0 2px #2f4d5a;
 }
 
-#hero h3 {
+#hero h5 {
   color: white;
+}
+
+#hero-text {
+  padding-top: 100px;
 }
 
 #hero .btn-get-started {
@@ -520,9 +524,6 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
-  background-image: url(../img/antelope_bg.jpg);
-  background-position: center;
-  width: 100%;
 }
 
 .section-title h2 {
@@ -984,10 +985,10 @@ section {
 }
 
 #gifts {
-  background-image: url("../img/joshuatree_bg.jpg");
+  /* background-image: url("../img/joshuatree_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /*--------------------------------------------------------------
@@ -1604,6 +1605,9 @@ section {
 
 #countdown {
   width: 500px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (width <= 800px) {
@@ -1612,7 +1616,7 @@ section {
    height: 30px;
   }
   #hero {
-   background: linear-gradient(rgba(97, 109, 114, 0.5), rgba(55, 142, 181, 0.2)), url("../img/couple_portrait.jpg") top center;
+   background-image: url("../img/couple_portrait.jpg");
    background-size: cover;
  }
  #countdown {
@@ -1636,12 +1640,8 @@ section {
   color: black;
 }
 
-#rsvp {
-  background-image: url("../img/pjs_landscape_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-clip: padding-box;
+#rsvp p{
+  color: white;
 }
 
 .mySlides {
@@ -1731,7 +1731,7 @@ background-color: #717171;
 
 #faqs {
   background-color: #fff1da;
-  background: url("../img/familyportrait_portrait_bg.png") no-repeat;
+  /* background: url("../img/familyportrait_portrait_bg.png") no-repeat; */
   background-size: cover;
   background-position: center;
   background-position-y: -100px;
@@ -1797,4 +1797,44 @@ background-color: #717171;
 
 #hotel-address:hover {
 color: darkgrey;
+}
+
+#picture-title-venue {
+  background-image: url(../img/antelope.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 20%;
+  min-height: 40%;
+}
+
+#picture-title-travel{
+  background-image: url(../img/joshuatree.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 35%;
+  min-height: 40%;
+}
+
+#picture-title-schedule{
+  background-image: url(../img/greatsanddunes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 35%;
+  min-height: 40%;
+}
+
+#picture-title-gifts{
+  background-image: url(../img/horseshoebend.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 35%;
+  min-height: 40%;
+}
+
+#picture-title-faqs{
+  background-image: url(../img/familyportrait_portrait_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 5%;
+  min-height: 40%;
 }

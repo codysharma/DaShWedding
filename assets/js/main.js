@@ -78,7 +78,7 @@
   let selectHeader = select('#header')
   if (selectHeader) {
     const headerScrolled = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
       } else {
         selectHeader.classList.remove('header-scrolled')
@@ -124,7 +124,7 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with offset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {

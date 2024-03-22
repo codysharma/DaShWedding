@@ -141,6 +141,7 @@ h6 {
 .navbar {
   padding: 0;
   position: static;
+  display: none;
 }
 
 .navbar ul {

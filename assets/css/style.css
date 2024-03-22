@@ -465,10 +465,12 @@ h6 {
 
 #hero h5 {
   color: white;
+  padding-top: -20%;
+  text-emphasis: bold;
 }
 
 #hero-text {
-  padding-top: 100px;
+  /* padding-top: -20%; */
 }
 
 #hero .btn-get-started {
@@ -1522,17 +1524,26 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+  #hotel-address {
+    max-width: 200px;
+  }
 }
 
 .about-btn {
   display: inline-block;
-  background: #5b7cb5;
+  background: #ffffff00;
   padding: 6px 10px 8px 15px;
   color: #fff;
   border-radius: 50px;
   transition: 0.3s;
   position: relative;
+  border: 2px solid white;
 }
+
+.about-btn:hover {
+  background-color: #ffffff4f;
+  color: white;
+} 
 
 .resume .resume-title {
   font-size: 26px;
@@ -1611,6 +1622,12 @@ section {
   margin: auto;
   align-items: center;
   justify-content: center;
+  /* background-color: #497659; */
+  background-image: url(../img/bhangra-silhouette-abstract-01.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100px;
 }
 
 @media (width <= 800px) {
@@ -1643,8 +1660,17 @@ section {
   color: black;
 }
 
+#rsvp {
+  /* padding-top: 200px; */
+  position: absolute;
+  bottom: 10px;
+  border: 3px solid white;
+  padding: 5px;
+}
+
 #rsvp p{
   color: white;
+
 }
 
 .mySlides {
@@ -1653,6 +1679,7 @@ section {
   margin: 20px;  
   background-color: #ffffffa1;
   border-radius: 20px;
+  transition: 1s ease;
 }
 
 .mySlides h3 {
@@ -1674,13 +1701,17 @@ section {
   height: 300px;
 }
 
+#aboutus .section-title {
+  padding-top: 0em;;
+}
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
   display: inline;
   align-items: center;
-  left: 20%;
+  left: 10%;
   transition: 1s ease;
 }
 
@@ -1733,7 +1764,7 @@ background-color: #717171;
 }
 
 #faqs {
-  background-color: #fff1da;
+  /* background-color: #fff1da; */
   /* background: url("../img/familyportrait_portrait_bg.png") no-repeat; */
   background-size: cover;
   background-position: center;
@@ -1784,7 +1815,7 @@ background-color: #717171;
 }
 
 #aboutus {
- 
+ background-color: white;
 }
 
 #our-story-title {
@@ -1808,6 +1839,7 @@ color: darkgrey;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10%;
 }
 
 #picture-title-venue {
@@ -1831,6 +1863,12 @@ color: darkgrey;
 }
 
 #picture-title-faqs{
-  background-image: url(../img/familyportrait_portrait_bg.png);
-  background-position-y: 5%;
+  background-image: url(../img/familyportrait_portrait.jpg);
+  background-position-y: 40%;
+}
+
+#picture-title-contact {
+  background-image: url(../img/pjs_landscape.jpg);
+  background-position-y: 40%;
+  background-position: center;
 }

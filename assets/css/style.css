@@ -1,5 +1,6 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Montserrat", sans-serif;
   color: #444444;
 }
 
@@ -1840,7 +1841,7 @@ color: darkgrey;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 #picture-title-venue {
@@ -1872,4 +1873,12 @@ color: darkgrey;
   background-image: url(../img/pjs_landscape.jpg);
   background-position-y: 40%;
   background-position: center;
+}
+
+#hotel-btn {
+  background-color: #5B7CB5;
+}
+
+#hotel-btn:hover {
+  background-color: rgb(129, 151, 194)
 }

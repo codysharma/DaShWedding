@@ -1,5 +1,5 @@
 Todos:  
-
+- Hotel button styling now invisible  
 -  Add "Website made by Cody Sharma" somewhere  
 
  

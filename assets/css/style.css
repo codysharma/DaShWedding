@@ -532,11 +532,11 @@ section {
 }
 
 .section-title h2 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
   position: relative;
   margin-bottom: 30px;
-  color: #2f4d5a;
+  color: #ffffff;
   align-items: center;
   justify-content: center;
   z-index: 2;
@@ -1910,8 +1910,8 @@ color: darkgrey;
   background-color: rgb(129, 151, 194)
 } 
 
-.row {
-  padding-top: 2rem;
+.col-lg-6 {
+  padding-bottom: 2rem;
 }
 
 #googlemap {

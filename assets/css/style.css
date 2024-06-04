@@ -1875,10 +1875,43 @@ color: darkgrey;
   background-position: center;
 }
 
-#hotel-btn {
-  background-color: #5B7CB5;
+#aside-travelbureau {
+  background-color: #E39845;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
 }
 
-#hotel-btn:hover {
+#travel-btn {
+  color: #E39845;
+  background-color: white;
+}
+
+#travel-btn:hover {
+  background-color: #e39945;
+  color: white;
+}
+
+#otherActivities img {
+  max-width: 100%;
+}
+
+#hotelPicture {
+  max-width: 100%;
+}
+
+#venue .about-btn {
+  background-color: #5B7CB5;
+} 
+
+#venue .about-btn:hover {
   background-color: rgb(129, 151, 194)
+} 
+
+.row {
+  padding-top: 2rem;
+}
+
+#googlemap {
+  max-width: 100%;
 }

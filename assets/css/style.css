@@ -1558,7 +1558,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #6d425d;
+  border-left: 2px solid #497659;
   position: relative;
 }
 
@@ -1568,7 +1568,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #6d425d;
+  color: #497659;
   margin-bottom: 10px;
 }
 
@@ -1602,7 +1602,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #6d425d;
+  border: 2px solid #497659;
 }
 
 #schedule {
@@ -1845,17 +1845,19 @@ color: darkgrey;
 }
 
 #picture-title-venue {
-  background-image: url(../img/antelope.jpg);
+  background-image: url(../img/antelope_bg.jpg);
   background-position-y: 20%;
 }
 
+
+
 #picture-title-travel{
-  background-image: url(../img/joshuatree.jpg);
+  background-image: url(../img/joshuatree_bg.jpg);
   background-position-y: 35%;
 }
 
 #picture-title-schedule{
-  background-image: url(../img/greatsanddunes.jpg);
+  background-image: url(../img/greatsanddunes_bg.jpg);
   background-position-y: 35%;
 }
 
@@ -1914,4 +1916,16 @@ color: darkgrey;
 
 #googlemap {
   max-width: 100%;
+}
+
+#venue h2 {
+  color: #6D425D;
+}
+
+#travel h2 {
+  color: #e39845;
+}
+
+#schedule h2 {
+  color: #497659;
 }

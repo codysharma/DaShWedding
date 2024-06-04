@@ -511,6 +511,14 @@ h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+
+  /* #hero h5 {
+    background-position-y: 105%;
+  } */
+
+  #scrollButton {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------

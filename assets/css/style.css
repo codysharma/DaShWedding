@@ -26,32 +26,32 @@ h6 {
 #main {
   margin-top: 90px;
   display: grid;
-  grid-template-columns: 30% 70%;
+  /* grid-template-columns: 30% 70%; */
 }
-
+/* 
 #left-main {
   grid-column-start: 1;
   grid-column-end: 1;
-}
+} */
 
-.left-picture {
+/* .left-picture {
   width: 100%;
   top: 0;
   left: 0;
-}
+} */
 
-#left-picture-1 {
+/* #left-picture-1 {
   z-index: 3;
 }
 
 #left-picture-2 {
   z-index: 4;
-}
+} */
 
-#right-main {
+/* #right-main {
   grid-column-start: 2;
   grid-column-end: 2;
-}
+} */
 
 /*--------------------------------------------------------------
 # Back to top button

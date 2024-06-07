@@ -730,9 +730,9 @@ section {
 }
 
 @media (max-width: 1200px) {
-  .about .content {
+  /* .about .content {
     padding-right: 0;
-  }
+  } */
   .logo-text h3{
     font-size: medium;
   }
@@ -1678,6 +1678,18 @@ section {
  #countdown {
    display: none;
  }
+ /* #storyOne .aboutus-pictures{
+  width: 100px;
+  height: 100px;
+ } */
+
+ #myStoryDesktop {
+  display: none;
+ }
+
+ #myStoryMobile {
+  display: ;
+ }
  }
 
  @media (min-width:801px) and (max-width:1500px) {
@@ -1962,4 +1974,21 @@ color: darkgrey;
 
 #schedule h2 {
   color: #497659;
+}
+
+#prevButton {
+  position: absolute;
+  /* right: 5%; */
+  /* top: 100%; */
+}
+
+#nextButton {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+}
+
+.mobileAboutUsPictures {
+  max-width: 100%;
+  padding-left: 10%;
 }

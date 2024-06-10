@@ -1692,6 +1692,16 @@ section {
  }
  }
 
+ @media (width >800px) {
+  #myStoryDesktop {
+    display: ;
+   }
+  
+   #myStoryMobile {
+    display: none;
+   }
+ }
+
  @media (min-width:801px) and (max-width:1500px) {
   #hero {
     background-position-x: right;
@@ -1724,7 +1734,8 @@ section {
 .mySlides {
   max-width: 400px;
   align-items: center;
-  margin: 20px;  
+  margin: auto;  
+  left: 50%;
   background-color: #ffffffa1;
   border-radius: 20px;
   transition: 1s ease;

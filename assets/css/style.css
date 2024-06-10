@@ -114,7 +114,7 @@ h6 {
 
 #header.header-scrolled {
   background: #71797E;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 #header .logo h1 {
@@ -139,6 +139,7 @@ h6 {
 .logo-text {
   color: white;
   margin-left: 1rem;
+  min-width: 200px;
 }
 
 #header .logo h1 a,
@@ -350,6 +351,9 @@ h6 {
   }
   #logo-graphic {
     display: none;
+  }
+  #logo-text {
+    font-size: larger;
   }
 }
 
@@ -729,12 +733,14 @@ section {
   color: #848484;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 991px) {
   /* .about .content {
     padding-right: 0;
   } */
   .logo-text h3{
     font-size: medium;
+    padding-top: .75em;
+    /* background-color: #18d26e; */
   }
 }
 
@@ -1274,7 +1280,7 @@ section {
     margin-bottom: 110px;
   }
   .logo-text h3{
-    font-size: 28px;
+    font-size: larger;
   }
 }
 
@@ -2002,4 +2008,40 @@ color: darkgrey;
 .mobileAboutUsPictures {
   max-width: 100%;
   padding-left: 10%;
+}
+
+@media (width < 1700px) {
+  #contact-link {
+    display: none;
+  }
+}
+
+@media (width < 1500px) {
+  #faqs-link {
+    display: none;
+  }
+}
+
+@media (width < 1300px) {
+  #gifts-link {
+    display: none;
+  }
+}
+
+@media (width < 1250px) {
+  #schedule-link {
+    display: none;
+  }
+}
+
+@media (width < 1100px) {
+  #travel-link {
+    display: none;
+  }
+}
+
+@media (width < 1800px) {
+  #hero-text {
+    font-size: xx-large;
+  }
 }

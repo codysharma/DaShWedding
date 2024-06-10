@@ -1945,6 +1945,9 @@ color: darkgrey;
   color: white;
   border-radius: 15px;
   padding: 10px;
+  margin-left: 10px;
+  min-width: 45%;
+  float: right;
 }
 
 #travel-btn {
@@ -2044,4 +2047,8 @@ color: darkgrey;
   #hero-text {
     font-size: xx-large;
   }
+}
+
+#delhiActivities {
+  padding-top: 10px;
 }

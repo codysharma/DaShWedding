@@ -15,6 +15,10 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
   <!-- CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -51,10 +55,12 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <!-- <li><a class="nav-link scrollto" href="#rsvp" id="rsvp-link">RSVP</a></li> -->
           <li><a class="nav-link scrollto" href="#aboutus" id="story-link">Our Story</a></li>
-          <li><a class="nav-link scrollto" href="#venue" id="venue-link">Venue and Travel</a></li>
+          <li><a class="nav-link scrollto" href="#venue" id="venue-link">Accommodation and Travel</a></li>
+          <li><a class="nav-link scrollto" href="#travel" id="travel-link">Touring India</a></li>
           <li><a class="nav-link scrollto" href="#schedule" id="schedule-link">Schedule of Events</a></li>
           <li><a class="nav-link scrollto" href="#gifts" id="gifts-link">Gifts</a></li>
           <li><a class="nav-link scrollto" href="#faqs" id="faqs-link">FAQs</a></li>
+          <li><a class="nav-link scrollto" href="#contact" id="contact-link">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -72,33 +78,28 @@
         <h1>Damini and Shivang</h1>
       </div>
      
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScggTeefiVs8pGFqkb5mdtBTpjLi_RZ_hMqEVALP4zduV8fJg/viewform?usp=sf_link" class="about-btn" target="_blank" rel="noopener noreferrer">Intent to Attend<i class="bx bx-chevron-right"></i></a>
       <div id="rsvp">
-        <p>We are blocking the rooms. Please share your early intent by April 23, 2024</p>
-        <p>Note: A formal RSVP will follow soon</p>
-        <a href="#rsvp" class="btn-get-started scrollto"><i class="bx bx-chevrons-down" id="get-started-arrows"></i></a>
+        <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScggTeefiVs8pGFqkb5mdtBTpjLi_RZ_hMqEVALP4zduV8fJg/viewform?usp=sf_link" class="about-btn" target="_blank" rel="noopener noreferrer">Intent to Attend<i class="bx bx-chevron-right" id="rsvp-arrow"></i></a> -->
+        <p>A formal RSVP will be posted soon.</p>
     </div>
+    <!-- <a href="#rsvp" class="btn-get-started scrollto" id="scrollButton"><i class="bx bx-chevrons-down" id="get-started-arrows"></i></a> -->
+
     </div>
   </section>
   <!-- End Landing -->
 
 <main id="main">
-<div id="left-main">
-  <img src="./assets/img/pjs_portrait.jpg" id="left-picture-1" class="left-picture">
-  <img src="./assets/img/couple-portrait2.jpg" id="left-picture-2" class="left-picture">
-
-</div>
-<div id="right-main">
   <!-- ======= About Section ======= -->
   <section id="aboutus" class="testimonials section-bg">
-    <div class="container" data-aos="fade-up" id="aboutus-container" >
+    <div class="container" data-aos="fade-up" id="aboutus-container">
 
-      <div class="section-title">
-        <h2 style="color: #497659;"><img src="./assets/img/bhangra-silhouette-1.png" class="title-picture">Our Story</h2>
+      <div class="section-title" id="aboutus-title">
+        <h2 style="color: #497659;">Our Story</h2>
+        <p>Coming Soon</p>
       </div>  
-
-      <div class="slideshow-container" >
-          <div class="mySlides" >
+      <!-- <div class="row" id="myStoryDesktop">
+        <div class="slideshow-container" id="StoryContainer">
+          <div class="mySlides" id="storyOne">
             <img src="./assets/img/IMG_2631.jpg" class="aboutus-pictures">
             <h3>Boston</h3>
             <p>lorem ipsum blah blah blah</p>
@@ -134,85 +135,225 @@
             <p>Fulfilling a lifelong dream of Damini's, we took a trip to see the famed picturesque Antelope Canyon.</p>
           </div>
 
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+        <a class="prev" onclick="plusSlides(-1)" id="prevButton">❮</a>
+        <a class="next" onclick="plusSlides(1)" id="nextButton">❯</a>
+        </div>
       </div>
-      <div id="countdown"  style="display: ;">
+      <div class="row" id="myStoryMobile">
+        <div class="row" id="myStoryMobile">
+          <div class="col-lg-6">
+            <img src="./assets/img/IMG_2631.jpg" class="mobileAboutUsPictures">
+          </div>
+          <div class="col-lg-6">
+            <h4>Boston</h4>
+            <p>lorem ipsum blah blah blah</p>
+          </div>
+        </div>
+        <div class="row" id="myStoryMobile">
+          <div class="col-lg-6">
+            <img src="./assets/img/IMG_2631.jpg" class="mobileAboutUsPictures">
+          </div>
+          <div class="col-lg-6">
+            <h4>Visiting</h4>
+            <p>lorem ipsum blah blah blah</p>
+          </div>
+        </div>
+        <div class="row" id="myStoryMobile">
+          <div class="col-lg-6">
+            <img src="./assets/img/IMG_2631.jpg" class="mobileAboutUsPictures">
+          </div>
+          <div class="col-lg-6">
+            <h4>San Francisco</h4>
+            <p>lorem ipsum blah blah blah</p>
+          </div>
+        </div>
+      </div> -->
+     
+      <!-- <div id="countdown"  style="display: ;">
         <a href="https://logwork.com/countdown-4uid" class="countdown-timer" data-style="circles" data-timezone="Asia/Kolkata" data-textcolor="#000000" data-date="2024-12-27 00:00" data-background="#6d425d" data-digitscolor="#000000" data-unitscolor="#000000" aria-current="page">Wedding Countdown</a>
-      </div>
-      <!-- testing other carousel -->
-
-
+      </div> -->
       </div>
 
   </section>
   <!-- End aboutus Section -->
 
-
-
-
 <!-- venue section -->
-<div class="picture-title" id="picture-title-venue">
-  <div class="section-title">
-    <h2 style="color: #e39845;"><img src="./assets/img/bhangra-silhouette-1.png" class="title-picture">Venue</h2>
+<section id="venue" class="resume" >
+  <div class="picture-title" id="picture-title-venue" data-aos="fade-up">
+    <div class="section-title">
+      <h2 style="color: #ffffff;">Accommodation <br>& Travel</h2>
+    </div>
   </div>
-</div>
 
-<section id="venue" class="resume">
   <div class="container" data-aos="fade-up" id="resume-background">
-    <div class="row">
-      <div class="col-lg-6" id="venue-info">
-        <h2>The ITC Rajputana</h2>
-        <a href="https://www.itchotels.com/in/en/itcrajputana-jaipur" class="about-btn" target="_blank" rel="noopener noreferrer">Hotel Website<i class="bx bx-chevron-right"></i></a>
-        <br><br>
-        <p>Address:</p>
-        <a href="https://www.google.com/maps/place/ITC+Rajputana,+a+Luxury+Collection+Hotel,+Jaipur/@26.919166,75.7916931,15z/data=!4m8!3m7!1s0x0:0x288f3f3579fdbcc6!5m2!4m1!1i2!8m2!3d26.919166!4d75.7916931" id="hotel-address">Palace Road, Gopalbari, Jaipur, Rajasthan 302006, India</a>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.5168807927653!2d75.78905357593386!3d26.91882365982698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3f63be351e3%3A0x288f3f3579fdbcc6!2sITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%2C%20Jaipur!5e0!3m2!1sen!2sus!4v1708921148646!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="row" id="hotelBlock">
+      <div class="col-lg-6" id="hotel-info">
+        <h2>HOTEL BLOCK</h2>
+        <br>
+        <h4>ITC Rajputana</h4>
+        <p>We have reserved rooms for all guests at the same hotel that will host all the wedding events. Please refer to your invite for further details on confirming a booking, but rest assured that you will have a room at a locked in rate for 
+        December 28 and 29.<br><br>
+        While rooms are being held for guests of the wedding on those two nights, please note that because it is peak travel season in Jaipur, additional nights before or after the wedding days may not be available at the same hotel or at the same rate. If you do wish to extend your stay in Jaipur, please feel free to make a booking through the hotel website or reach out to <a href="#travel">TravelBureauIndia</a> for recommendations (see their information in the Touring India section below).</p>
+        <a href="https://www.itchotels.com/in/en/itcrajputana-jaipur" class="about-btn" target="_blank" rel="noopener noreferrer" id="hotel-btn">Explore ITC Rajputana<i class="bx bx-chevron-right"></i></a>
+      </div>
+      <div class="col-sm-6" id="hotelPictureContainer">
+        <img src="./assets/img/itc_rajputana.jpg" id="hotelPicture">
+        <!-- <a href="https://www.google.com/maps/place/ITC+Rajputana,+a+Luxury+Collection+Hotel,+Jaipur/@26.919166,75.7916931,15z/data=!4m8!3m7!1s0x0:0x288f3f3579fdbcc6!5m2!4m1!1i2!8m2!3d26.919166!4d75.7916931" id="hotel-address">Palace Road, Gopalbari, Jaipur, Rajasthan 302006, India</a> -->
+      </div>
+    </div>
+    <div class="row" id="gettingThere">
+      <div class="col-lg-6">
+        <h2>GETTING THERE</h2>
+        <p>The schedule of events will be coming soon but note that the first event on the
+          28th will begin at 5pm. Check in will be allowed after xxx.</p>
+        <h4>Arriving via flight or train</h4>
+        <p>If you are planning to fly or take a train to Jaipur, please look out for someone with a sign with your name. We will be coordinating a pick up and drop off for you in the coming months. Domestic flights are getting booked up too so
+          please book travel soon!</p>
+        <p>If you are flying in from out of the country, you will likely find better connections
+          to the Delhi or Mumbai airports rather than an international flight to Jaipur.
+          Note that it is only a 4 hour drive to Jaipur from Delhi.
+        </p>
+        <h4>Arriving via road</h4>
+        <p>If you are planning to fly into the Delhi airport and get to Jaipur by road, we recommend the car rental agency listed below. Note that car rentals in India come with a driver!</p>    
+        <a href="#" class="about-btn" target="_blank" rel="noopener noreferrer" id="carrental-btn">Car Rental<i class="bx bx-chevron-right"></i></a>
+      </div>
+      <div class="col-lg-6" id="mapContainer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.5168807927653!2d75.78905357593386!3d26.91882365982698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3f63be351e3%3A0x288f3f3579fdbcc6!2sITC%20Rajputana%2C%20a%20Luxury%20Collection%20Hotel%2C%20Jaipur!5e0!3m2!1sen!2sus!4v1708921148646!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="googlemap"></iframe>
+      </div>
+    </div>
+    <div class="row" id="visas">
+      <div class="col-lg-6">
+        <h2>E-VISAS</h2>
+        <p>If you are not an Indian citizen, you may need a visa to enter the country. Use the link below to find out which countries can do e-visas as well as the online application.</p>
+        <a href="https://indianvisaonline.gov.in/evisa/tvoa.html" class="about-btn" target="_blank" rel="noopener noreferrer" id="visa-btn">E-Visas<i class="bx bx-chevron-right"></i></a>
+        <p>Note: Must apply at least 4 days in advance</p>
       </div>
     </div>
 </section>
 <!-- End of venue section -->
 
 <!-- travel section -->
-<div class="picture-title" id="picture-title-travel">
-  <div class="section-title">
-    <h2 style="color: #e39845;"><img src="./assets/img/bhangra-silhouette-1.png" class="title-picture">Travel</h2>
-  </div>
-</div>
-
 <section id="travel" class="resume">
+  <div class="picture-title" id="picture-title-travel" data-aos="fade-up">
+    <div class="section-title">
+      <h2 style="color: #ffffff;">TOURING INDIA</h2>
+    </div>
+  </div>
+
   <div class="container" data-aos="fade-up" >
-    <div class="row">
-      <div class="col-lg-6 ">
-        <h3>Nearest airports and info:</h3>
+    <div class="row" id="jaipurActivities">
+      <h2>ATTRACTIONS & ACTIVITIES IN/NEAR JAIPUR</h2>
+      <div class="col-lg-6">
         <br>
-        <h3>
-          Other activities/destinations:
-        </h3>
         <ul>
-          <li>Description, with links to google maps and websites</li>
+          <li>Walking & market tour</li>
+          <li>Amer Fort</li>
+          <li>Jhalana Leopard Reserve - Safari tickets sell fast!</li>
+          <li>Ranthambore Safari - tickets sell fast</li>
         </ul>
+        </div>
+
+    </div>
+    <br>
+    <div class="row" id="otherActivities" >
+      <h2>ATTRACTIONS & ACTIVITIES BEYOND JAIPUR</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <p>Especially if you’re coming to India from outside the country, you may want to extend your trip and explore more places. An easy way to do this around Jaipur is to complete the Golden Triangle: Delhi-Agra-Jaipur. This is a great road or train trip, though you can also fly between the cities. 
+          Of course, if you have already seen the Golden Triangle, there is no shortage of amazing destinations in India and we’d be happy to make other recommendations! 
+          </p>
+          <p>
+          The car rental agency (a driver is assigned to you with each booking) can be booked from this agency. And Sunil or Shilpi Gupta from Travel Bureau India, mentioned on the right, can help you plan and book a full trip. </p>
+          <p>Please note that this is peak travel season in India and things will get booked up fast, so make your reservations ASAP! </p>
+        </div>
+        <div class="col-lg-3" id="aside-travelbureau">
+          <h3>Want Help Planning an Itnerary?</h3>
+          <a href="https://www.travelbureauindia.com/" class="about-btn" target="_blank" rel="noopener noreferrer" id="travel-btn">Travel Bureau India<i class="bx bx-chevron-right"></i></a>
+          <p></p>
+          <p>Sunil Gupta | sunil@travelbureauindia.com | Whatsapp #: +91 983.703.3023</p>
+          <p>Shilpi Gupta | Whatsapp #: +91 982.064.5750</p>
+          <p>Our family friends run a travel agency that will plan a 
+          customized travel plan for you! Please give them a call
+          with your dates and preferrences and they’ll work with 
+          you to create your itinerary.</p>
+          </div>
+
+      </div>
+      
+        <div class="row" id="delhiActivities">
+          <div class="col-lg-6" id="delhiList">
+            <br>
+            <h4>Some Key Sights in Delhi</h4>
+            <ul>
+              <li>Walking tour of Old Delhi</li>
+              <li>Akshardham</li>
+              <li>Red Fort</li>
+              <li>Lotus Temple</li>
+              <li>Gandhi Memorial</li>
+              <li>Jamma Masjid Mosque</li>
+              <li>Sheeshganj Gurudwara (Sikh Temlile)</li>
+            </ul>
+          </div>
+          <div class="col-lg-6" id="delhiPictureContainer">
+            <img src="./assets/img/Lotus_Temple.jpg" id="delhiPicture">
+          </div>
+        </div>
+        <div class="row" id="agraActivities">
+          <div class="col-lg-6" id="agraList">
+            <br>
+            <h4>Some Key Sights in Agra</h4>
+            <ul>
+              <li>Taj Mahal</li>
+              <li>Fatehpuri Sikri</li>
+              <li>Agra Fort</li>
+            </ul>
+          </div>
+          <div class="col-lg-6" id="agraPictureContainer">
+            <img src="./assets/img/Taj_Mahal.jpg" id="agraPicture">
+          </div>
+        </div>
+    </div>
+    <div class="row" id="travelTips">
+      <h2>TRAVEL TIPS</h2>
+      <div class="col-lg-6">
+        <br>
+        <!-- <p>Getting around if you haven’t rented a car for the duration of your trip:</p>
+        <p>Tipping norms:</p> -->
+        <p>Food safety:</p>
+        <ul>
+          <li>Tap water in India is not safe to drink. Showering, washing hands, etc. is fine with tap water, but be sure any water you drink comes from unopened, sealed bottles unless you are at someone's home. This is a common practic even at restaurants, where they will open the water bottle in front of you at your table.</li>
+        </ul>
+        </div>
+      <div class="col-lg-6">
+          <!-- <p>Getting sick:</p> -->
+          <p>Weather:</p>
+          <ul>
+            <li>In December, Jaipur ranges from 24C during the day down to 10C in the evening. It averages 4mm of rain over the month of December, so shouldn't rain on us!</li>
+          </ul>
       </div>
     </div>
   </div>
+
 
 </section>
 
 <!-- end of travel section -->
 
 <!-- Schedule of Events section -->
-
-<div class="picture-title" id="picture-title-schedule">
-  <div class="section-title">
-    <h2 style="color: #e39845;"><img src="./assets/img/bhangra-silhouette-1.png" class="title-picture">Schedule of Events</h2>
-  </div>
-</div>
-
 <section id="schedule" class="resume">
+  <div class="picture-title" id="picture-title-schedule" data-aos="fade-up">
+    <div class="section-title">
+      <h2 style="color: #ffffff;">
+        Schedule of Events</h2>
+    </div>
+  </div>
+
   <div class="container" data-aos="fade-up" id="resume-background">
-    <div class="row" id="schedule-items">
+    <p>Coming Soon</p>
+
+    <!-- <div class="row" id="schedule-items">
       <div class="col-sm-6">
-        <h3 class="resume-title">Thursday the 28th of December</h3>
+        <h2 class="resume-title">Thursday the 28th of December</h2>
         <div class="resume-item">
           <h4>Event title</h4>
           <p><em>Time</em></p>
@@ -233,7 +374,7 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <h3 class="resume-title">Friday the 29th of December</h3>
+        <h2 class="resume-title">Friday the 29th of December</h2>
         <div class="resume-item">
           <h4>Event title</h4>
           <p><em>Time</em></p>
@@ -253,19 +394,20 @@
           </ul>
         </div>          
       </div>
-      </div>
+      </div> -->
     </div>
 </section>
 <!-- End of schedule -->
 
 <!-- Gifts section -->
-<div class="picture-title" id="picture-title-gifts">
-  <div class="section-title">
-    <h2 style="color: #e39845;"><img src="./assets/img/bhangra-silhouette-1.png" class="title-picture">Gifts</h2>
-  </div>
-</div>
-
 <section id="gifts" class="portfolio">
+  <div class="picture-title" id="picture-title-gifts" data-aos="fade-up">
+    <div class="section-title">
+      <h2 style="color: #ffffff;">
+        Gifts</h2>
+    </div>
+  </div>
+
   <div class="container" data-aos="fade-up" id="gifts-background">
     <div class="row">
       <div>
@@ -273,7 +415,7 @@
         <h5>If you insist, feel free to donate to one of these causes near and dear to us.</h5>
       </div>
 
-      <div id="charities" class="row" data-aos="fade-up">
+      <!-- <div id="charities" class="row" data-aos="fade-up">
         <div class="col-lg-6">
             <div class="charities-links">
               <a href="https://eji.org/" target="_blank">
@@ -288,7 +430,7 @@
               </a>
             </div>
         </div>
-      </div>
+      </div> -->
 
       </div>
     </div>
@@ -298,15 +440,17 @@
 
 <!-- FAQs section -->
 
-<div class="picture-title" id="picture-title-faqs">
-  <div class="section-title">
-    <h2 style="color: #e39845;"><img src="./assets/img/bhangra-silhouette-1.png" class="title-picture">FAQs</h2>
-  </div>
-</div>
-
 <section id="faqs" class="resume">
+  <div class="picture-title" id="picture-title-faqs" data-aos="fade-up">
+    <div class="section-title">
+      <h2 style="color: #ffffff;">
+        FAQs</h2>
+    </div>
+  </div>
+
   <div class="container" data-aos="fade-up" id="resume-background">
-    <div class="row">
+    <p>Coming Soon</p>
+    <!-- <div class="row">
   <div class="col-lg-6" id="faq1">
       <p><em>Can I ...?</em></p>
       <p class="answer">Yes, you are ...</p>
@@ -319,40 +463,42 @@
     <p><em>Can I ...?</em></p>
     <p class="answer">Yes, you are ...</p>
 </div>
-</div>
+</div> -->
 </div>
 
 </section>
 <!-- end FAQs -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2><img src="./assets/img/bhangra-silhouette-1.png" class="title-picture">Contact Us</h2>
-          <p>Have further questions? Email us!</p>
-        </div>
-
-          <div class="col-lg-3 col-md-6">
-            <a href="DaminiAndShivang@gmail.com">
-            <div class="info-box mb-4">
-              <i class="bx bx-envelope"></i>
-              <p>DaminiAndShivang@gmail.com</p>
-            </div>
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row">      
-
-        </div>
-
-    </section>
-    <!-- End Contact Section -->
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact section-bg">
+  <div class="picture-title" id="picture-title-contact" data-aos="fade-up">
+    <div class="section-title">
+      <h2 style="color: #ffffff;">Contact us</h2>
+    </div>
   </div>
-  </main><!-- End #main -->
+  <div class="container" data-aos="fade-up">
+      <p>Have further questions? Email us!</p>
+      <div class="col-lg-3 col-md-6">
+        <!-- <a href="DaminiAndShivang@gmail.com"> -->
+        <div class="info-box mb-4">
+          <i class="bx bx-envelope"></i>
+          <p>DaminiAndShivang@gmail.com</p>
+        </div>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="row">      
+
+    </div>
+
+  </div>
+</section>
+<!-- End Contact Section -->
+
+</main><!-- End #main -->
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">

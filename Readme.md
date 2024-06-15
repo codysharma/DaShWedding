@@ -1,6 +1,9 @@
 Todos:  
-
--  Add "Website made by Cody Sharma" somewhere  
+- Hotel button styling now invisible  
+- Change title text to below pictures, like the "Our Story" styling  
+- Change joshua tree picture to one from their Italy trip  
+- FAQs picture not showing up on github hosted version
+- website designed by cody sharma
 
  
   

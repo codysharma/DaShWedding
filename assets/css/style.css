@@ -1972,6 +1972,7 @@ color: darkgrey;
   background-color: #6d425d57;
   color: #6d425d;
   border: 1px solid #6d425d;
+  font-weight: bolder;
 } 
 
 #venue .about-btn:hover {

@@ -693,9 +693,9 @@ section {
 
 .about .content .about-btn {
   display: inline-block;
-  background: #67b0d1;
+  /* background: #67b0d1; */
   padding: 6px 44px 8px 30px;
-  color: #fff;
+  /* color: #fff; */
   border-radius: 50px;
   transition: 0.3s;
   position: relative;
@@ -709,7 +709,7 @@ section {
 }
 
 .about .content .about-btn:hover {
-  background: #7bbad7;
+  /* background: #7bbad7; */
 }
 
 .about .icon-boxes .icon-box {
@@ -1573,9 +1573,9 @@ section {
 
 .about-btn {
   display: inline-block;
-  background: #ffffff00;
+  /* background: #ffffff00; */
   padding: 6px 10px 8px 15px;
-  color: #fff;
+  /* color: #fff; */
   border-radius: 50px;
   transition: 0.3s;
   position: relative;
@@ -1583,7 +1583,7 @@ section {
 }
 
 .about-btn:hover {
-  background-color: #ffffff4f;
+  /* background-color: #ffffff4f; */
   color: white;
 } 
 
@@ -1940,7 +1940,7 @@ color: darkgrey;
   background-position: center;
 }
 
-#aside-travelbureau {
+.aside {
   background-color: #E39845;
   color: white;
   border-radius: 15px;
@@ -1969,11 +1969,14 @@ color: darkgrey;
 }
 
 #venue .about-btn {
-  background-color: #5B7CB5;
+  background-color: #6d425d57;
+  color: #6d425d;
+  border: 1px solid #6d425d;
 } 
 
 #venue .about-btn:hover {
-  background-color: rgb(129, 151, 194)
+  background-color: #6d425d;
+  color: white;
 } 
 
 .col-lg-6 {
@@ -2051,4 +2054,23 @@ color: darkgrey;
 
 #delhiActivities {
   padding-top: 10px;
+}
+
+#muskanTravels {
+  background-color: #6d425d;
+}
+
+ #venue #taxi-link {
+  background-color: white;
+  color: #6d425d;
+}
+
+#venue #taxi-link:hover {
+  color: white;
+  background-color: #6d425d;
+  border: 1px solid white;
+} 
+
+#visas {
+  padding-top: 1rem;
 }

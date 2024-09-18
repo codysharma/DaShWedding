@@ -1660,7 +1660,7 @@ section {
 }
 
 #countdown {
-  width: 500px;
+  min-width: 400px;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -1670,6 +1670,17 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 100px;
+}
+
+#countdownColumn {
+  /* background-color: #409cc5; */
+  /* max-width: 400px; */
+}
+
+#storyDesktopContainer{
+  /* background-color: #18d26e; */
+  display: grid;
+  place-items: center;
 }
 
 @media (width <= 800px) {
@@ -1701,10 +1712,16 @@ section {
  @media (width >800px) {
   #myStoryDesktop {
     display: ;
+    width: 600px;
+    height: 600px;
+    /* background-color: grey; */
    }
   
    #myStoryMobile {
     display: none;
+   }
+
+   #StoryContainer {
    }
  }
 
@@ -1737,12 +1754,14 @@ section {
 
 }
 
+#StoryContainer {
+  
+}
+
 .mySlides {
-  max-width: 400px;
+  width: 400px;
   align-items: center;
-  margin: auto;  
-  left: 50%;
-  background-color: #ffffffa1;
+  background-color: #8683838e;
   border-radius: 20px;
   transition: 1s ease;
 }
@@ -1776,7 +1795,9 @@ section {
   margin: auto;
   display: inline;
   align-items: center;
-  left: 10%;
+  display: grid;
+  place-items: center;
+  /* left: 10%; */
   transition: 1s ease;
 }
 
@@ -1791,18 +1812,17 @@ section {
   background-color: #467659;
   font-weight: bold;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 10px;
   text-decoration: none;
+  height: 100px;
 }
 
 .next {
-  right: -3rem;
-  border-radius: 10px;
+  left: 90%;
 }
 
 .prev {
-  left: -3rem;
-  border-radius: 10px;
+  left: 2rem;
 }
 
 .prev:hover, .next:hover {
@@ -1872,6 +1892,10 @@ background-color: #717171;
 }
 
 #schedule {
+}
+
+#aboutus .row {
+  /* display: inline-block; */
 }
 
 #schedule .row {
@@ -2000,17 +2024,17 @@ color: darkgrey;
   color: #497659;
 }
 
-#prevButton {
+/* #prevButton {
   position: absolute;
-  /* right: 5%; */
-  /* top: 100%; */
+  /* right: 5%;
+  top: 100%; */
 }
 
 #nextButton {
   position: absolute;
-  right: 5%;
-  top: 50%;
-}
+  /* right: 5%;
+  top: 50%; */
+} */
 
 .mobileAboutUsPictures {
   max-width: 100%;

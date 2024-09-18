@@ -274,11 +274,12 @@ function showSlides(num) {
   const updatedSlideDisplay = () => {
     // const screenWidth = window.innerWidth;
     const screenWidth = document.getElementById("aboutus").offsetWidth
-    if (screenWidth < 1200) {
-      num = 1;
-    } else {
-      num = 2; 
-    }
+    // if (screenWidth < 1200) {
+    //   num = 1;
+    // } else {
+    //   num = 2; 
+    // }
+    num = 1;
   
     // default to setting slides as display: none
     for (i = 0; i < slides.length; i++) {

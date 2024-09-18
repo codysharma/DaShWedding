@@ -1773,7 +1773,9 @@ section {
 .mySlides {
   width: 400px;
   align-items: center;
-  background-color: #8683838e;
+  /* background-color: #8683838e; */
+  background-color: #467659;
+  color: white;
   border-radius: 20px;
   transition: 1s ease;
 }
@@ -1783,6 +1785,7 @@ section {
 }
 
 .mySlides p {
+  padding-top: 10px;
   padding-left: 10px;
 }
 
@@ -1816,17 +1819,18 @@ section {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
   width: auto;
-  padding: 16px;
-  margin-top: -10rem;
+  padding: 20% 15px 15px 15px;
+  /* margin-top: -15rem; */
   color: white;
-  background-color: #467659;
+  background-color: #4676598e;
+  border: 1px solid #467659;
   font-weight: bold;
   transition: 0.6s ease;
   border-radius: 10px;
   text-decoration: none;
-  height: 100px;
+  height: 50%;
 }
 
 .next {
@@ -1834,11 +1838,11 @@ section {
 }
 
 .prev {
-  left: 2rem;
+  left: 1rem;
 }
 
 .prev:hover, .next:hover {
-  background-color: #8fa598;
+  background-color: #467659;
 }
 
 .dot {
@@ -2119,4 +2123,38 @@ color: darkgrey;
 .faq-button:hover {
   background-color: #497659;
   color: white;
+}
+
+.clothesLink {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.clothes {
+  padding: 10px;
+  transition: .2s;
+}
+
+.clothes:hover {
+  transform: scale(1.1);
+  transition: .3s;
+  opacity: .7;
+}
+
+#clothesWebsites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.clothes p{
+  background-color: grey;
+  color: white;
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+}
+
+.clothes:hover p{
+  transition: .2s;
+  /* transform: scaleY(1.1) */
 }

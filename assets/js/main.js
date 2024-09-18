@@ -312,3 +312,99 @@ function currentSlide(num) {
     showSlides(slideIndex = num);
 }
 
+
+
+
+//Slider functionality for "our story"
+const slider = document.querySelector('.slideshow-container'),
+  slides = Array.from(document.querySelectorAll('.mySlides'))
+
+let isDragging = false,
+  startPos = 0,
+  currentTranslate = 0,
+  prevTranslate = 0,
+  animationID,
+  currentIndex = 0
+
+slides.forEach((slide, index) => {
+  const slideImage = slide.querySelector('img')
+  slideImage.addEventListener('dragstart', (e) => e.preventDefault())
+
+  // Pointer and touch events
+  slide.addEventListener('pointerdown', pointerDown(index))
+  slide.addEventListener('pointerup', pointerUp)
+  slide.addEventListener('pointerleave', pointerUp)
+  slide.addEventListener('pointermove', pointerMove)
+
+  // Add touch support
+  slide.addEventListener('touchstart', pointerDown(index))
+  slide.addEventListener('touchend', pointerUp)
+  slide.addEventListener('touchmove', pointerMove)
+})
+
+// Make responsive to viewport changes
+window.addEventListener('resize', setPositionByIndex)
+
+// Prevent menu popup on long press
+window.oncontextmenu = function (event) {
+  event.preventDefault()
+  event.stopPropagation()
+  return false
+}
+
+function pointerDown(index) {
+  return function (event) {
+    currentIndex = index
+    startPos = getPositionX(event)
+    isDragging = true
+    animationID = requestAnimationFrame(animation)
+    slider.classList.add('grabbing')
+  }
+}
+
+function pointerMove(event) {
+  if (isDragging) {
+    const currentPosition = getPositionX(event)
+    currentTranslate = prevTranslate + currentPosition - startPos
+  }
+}
+
+function pointerUp() {
+  cancelAnimationFrame(animationID)
+  isDragging = false
+  const movedBy = currentTranslate - prevTranslate
+
+  // If moved enough negative then snap to next slide if there is one
+  if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1
+
+  // If moved enough positive then snap to previous slide if there is one
+  if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
+
+  setPositionByIndex()
+  slider.classList.remove('grabbing')
+}
+
+function animation() {
+  setSliderPosition()
+  if (isDragging) requestAnimationFrame(animation)
+}
+
+function setPositionByIndex() {
+  currentTranslate = currentIndex * -window.innerWidth
+  prevTranslate = currentTranslate
+  setSliderPosition()
+}
+
+function setSliderPosition() {
+  slider.style.transform = `translateX(${currentTranslate}px)`
+}
+
+// Helper function to get X position from either touch or mouse event
+function getPositionX(event) {
+  return event.type.includes('mouse')
+    ? event.clientX
+    : event.touches[0].clientX
+}
+
+
+

@@ -1713,13 +1713,33 @@ section {
  } */
 
  #myStoryDesktop {
+  /* display: none; */
+  width: 100%
+ }
+ .prev, .next {
   display: none;
  }
 
- #myStoryMobile {
-  display: ;
+ .mySlides {
+  max-width: 80vw;
  }
+
+ .aboutus-pictures {
+  width: 80vw;
+  
  }
+
+ .slideshow-container {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out
+ }
+ 
+ }
+
+.grabbing {
+  transform: scale(.9);
+  cursor: grabbing;
+}
 
  @media (width >800px) {
   #myStoryDesktop {
@@ -1740,9 +1760,6 @@ section {
  @media (min-width:801px) and (max-width:1500px) {
   #hero {
     background-position-x: right;
-  }
-  .slideshow-container {
-
   }
  }
  
@@ -2177,3 +2194,4 @@ color: darkgrey;
 #springSoul p{
   color: black;
 }
+

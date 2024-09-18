@@ -1683,6 +1683,18 @@ section {
   place-items: center;
 }
 
+#myStoryMobile img {
+  max-width: 100%;
+}
+
+#myStoryMobile {
+  /* background: #111; */
+}
+
+#myStoryMobileColumn {
+  /* background-color: green; */
+}
+
 @media (width <= 800px) {
   #dashlogo {
    min-height: none;
@@ -2028,7 +2040,6 @@ color: darkgrey;
   position: absolute;
   /* right: 5%;
   top: 100%; */
-}
 
 #nextButton {
   position: absolute;
@@ -2037,8 +2048,8 @@ color: darkgrey;
 } */
 
 .mobileAboutUsPictures {
-  max-width: 100%;
-  padding-left: 10%;
+  max-width: 60px;
+  /* padding-left: 10%; */
 }
 
 @media (width < 1700px) {

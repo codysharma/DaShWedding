@@ -2075,3 +2075,13 @@ color: darkgrey;
 #visas {
   padding-top: 1rem;
 }
+
+.faq-button {
+  border: 1px solid #497659;
+  color: #497659;
+}
+
+.faq-button:hover {
+  background-color: #497659;
+  color: white;
+}

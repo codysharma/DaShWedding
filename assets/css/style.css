@@ -1661,7 +1661,8 @@ section {
 
 #countdown {
   min-width: 400px;
-  margin: auto;
+  margin-top: 2rem;
+  /* margin: auto; */
   align-items: center;
   justify-content: center;
   /* background-color: #497659; */
@@ -1673,8 +1674,7 @@ section {
 }
 
 #countdownColumn {
-  /* background-color: #409cc5; */
-  /* max-width: 400px; */
+
 }
 
 #storyDesktopContainer{
@@ -1785,8 +1785,7 @@ section {
 }
 
 .mySlides p {
-  padding-top: 10px;
-  padding-left: 10px;
+  padding: 10px 10px 0 10px;
 }
 
 .aboutus-container {
@@ -1798,6 +1797,18 @@ section {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 300px;
+}
+
+.selfie {
+  justify-content: center;
+  align-items: center;
+}
+
+.selfie .aboutus-pictures {
+  display: block;
+  margin: 0 auto;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 #aboutus .section-title {
@@ -2157,4 +2168,8 @@ color: darkgrey;
 .clothes:hover p{
   transition: .2s;
   /* transform: scaleY(1.1) */
+}
+
+#springSoul p{
+  color: black;
 }

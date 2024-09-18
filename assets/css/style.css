@@ -1883,6 +1883,10 @@ background-color: #717171;
   background-position-y: -100px;
 }
 
+#faq1 {
+  background-color: grey;
+}
+
 @media (max-width: 1500px) {
   #faqs {
     background-size: cover;

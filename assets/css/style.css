@@ -1695,7 +1695,7 @@ section {
   /* background-color: green; */
 }
 
-@media (width <= 800px) {
+@media only screen and (max-width: 600px) {
   #dashlogo {
    min-height: none;
    height: 30px;

@@ -390,9 +390,12 @@ function animation() {
 }
 
 function setPositionByIndex() {
-  currentTranslate = currentIndex * -window.innerWidth
-  prevTranslate = currentTranslate
-  setSliderPosition()
+  function setPositionByIndex() {
+    currentTranslate = currentIndex * -window.innerWidth; // Move to the correct slide based on index
+    prevTranslate = currentTranslate; // Update previous translate value
+    setSliderPosition();
+  }
+  
 }
 
 function setSliderPosition() {

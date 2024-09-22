@@ -2210,7 +2210,7 @@ color: darkgrey;
 }
 
 .faqQuestion:hover {
-  cursor:pointer;
+  /* cursor:pointer; */
   /* background-color: lightgrey;
   border-radius: 5px; */
 }

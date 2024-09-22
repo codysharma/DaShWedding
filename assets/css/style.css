@@ -1952,8 +1952,9 @@ background-color: #717171;
 }
 
 #schedule .row {
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  vertical-align: top;
 }
 
 #aboutus {
@@ -2200,3 +2201,6 @@ color: darkgrey;
   color: black;
 }
 
+#schedule .container {
+  vertical-align: top;
+}

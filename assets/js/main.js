@@ -409,5 +409,14 @@ function getPositionX(event) {
     : event.touches[0].clientX
 }
 
-
+// listener event for clicking buttons to show greater info
+document.addEventListener("DOMContentLoaded", function() {
+  const answer1 = document.getElementById("faqAnswer1")
+  if (answer1) {
+    answer1.addEventListener("click", function() {
+      console.log("test");
+    });
+  } else {
+    console.error("Element with ID 'faqAnswer1' not found.");
+  }})
 

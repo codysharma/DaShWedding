@@ -2204,3 +2204,13 @@ color: darkgrey;
 #schedule .container {
   vertical-align: top;
 }
+
+.faqAnswer {
+  /* display: none; */
+}
+
+.faqQuestion:hover {
+  cursor:pointer;
+  /* background-color: lightgrey;
+  border-radius: 5px; */
+}

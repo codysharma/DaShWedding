@@ -1800,7 +1800,10 @@ section {
 }
 
 .mySlides h3 {
-  padding-left: 10px;
+  padding: 5px 0px 0px 0px;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .mySlides p {

@@ -2214,3 +2214,15 @@ color: darkgrey;
   /* background-color: lightgrey;
   border-radius: 5px; */
 }
+
+#brochure-btn {
+  background-color: #E39845;
+  color: white;
+  
+}
+
+#brochure-btn:hover {
+  background-color: white;
+  color: #E39845;
+  border: solid 1px #E39845;
+}

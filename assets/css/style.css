@@ -2247,6 +2247,14 @@ color: darkgrey;
   margin-bottom: 1rem;
 }
 
-#club-picture-container {
-  /* margin-right: 10px; */
+#charityOne {
+  margin-bottom: 4rem;
+}
+
+#charityTwo {
+  margin-bottom: 4.5rem;
+}
+
+#charityThree {
+  margin-bottom: 4rem;
 }

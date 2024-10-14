@@ -2226,3 +2226,18 @@ color: darkgrey;
   color: #E39845;
   border: solid 1px #E39845;
 }
+
+#carTravel {
+  padding-bottom: 2rem;
+}
+
+#mumbai-btn {
+  background-color: #E39845;
+  color: white;
+}
+
+#mumbai-btn:hover {
+  background-color: white;
+  color: #E39845;
+  border: 1px solid #E39845;
+}

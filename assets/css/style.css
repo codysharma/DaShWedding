@@ -2044,6 +2044,7 @@ color: darkgrey;
 
 #hotelPicture {
   max-width: 100%;
+  padding-bottom: 1rem;
 }
 
 #venue .about-btn {
@@ -2240,4 +2241,12 @@ color: darkgrey;
   background-color: white;
   color: #E39845;
   border: 1px solid #E39845;
+}
+
+#hotel-btn {
+  margin-bottom: 1rem;
+}
+
+#club-picture-container {
+  /* margin-right: 10px; */
 }

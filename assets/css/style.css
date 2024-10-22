@@ -2067,7 +2067,7 @@ color: darkgrey;
   padding-bottom: 2rem;
 }
 
-#googlemap {
+.googlemap {
   max-width: 100%;
 }
 
@@ -2263,3 +2263,46 @@ color: darkgrey;
   /* margin-bottom: 4rem; */
 }
 
+#clubPicture {
+  max-width: 100%;
+}
+
+#faqAnswer1{
+  display: none;
+}
+
+#faqAnswer2{
+  display: none;
+}
+
+#faqAnswer3{
+  display: none;
+}
+
+#faqAnswer4{
+  display: none;
+}
+
+#faqArrow1:hover {
+  /* cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out; */
+}
+
+.faqQuestion {
+  cursor: pointer;
+}
+
+#faqArrowUp1 {
+  display: none;
+}
+
+#faqArrowUp2 {
+  display: none;
+}
+#faqArrowUp3 {
+  display: none;
+}
+#faqArrowUp4 {
+  display: none;
+}

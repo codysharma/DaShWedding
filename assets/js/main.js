@@ -403,4 +403,44 @@ function currentSlide(num) {
 //     : event.touches[0].clientX
 // }
 
+let faqQuestion1 = document.getElementById("faqQuestion1");
+let faqQuestion2 = document.getElementById("faqQuestion2");
+let faqQuestion3 = document.getElementById("faqQuestion3");
+let faqQuestion4 = document.getElementById("faqQuestion4");
+let faqAnswer1 = document.getElementById("faqAnswer1");
+let faqAnswer2 = document.getElementById("faqAnswer2");
+let faqAnswer3 = document.getElementById("faqAnswer3");
+let faqAnswer4 = document.getElementById("faqAnswer4");
+let faqArrowUp1 = document.getElementById("faqArrowUp1");
+let faqArrowUp2 = document.getElementById("faqArrowUp2");
+let faqArrowUp3 = document.getElementById("faqArrow3Up");
+let faqArrowUp4 = document.getElementById("faqArrow4Up");
+let faqArrowDown1 = document.getElementById("faqArrowDown1");
+let faqArrowDown2 = document.getElementById("faqArrowDown2");
+let faqArrowDown3 = document.getElementById("faqArrow3Down");
+let faqArrowDown4 = document.getElementById("faqArrow4Down");
 
+faqQuestion1.addEventListener("click", function(){
+  toggleDisplay(faqAnswer1)
+})
+
+faqQuestion2.addEventListener("click", function(){
+  toggleDisplay(faqAnswer2)
+})
+
+faqQuestion3.addEventListener("click", function(){
+  toggleDisplay(faqAnswer3)
+})
+faqQuestion4.addEventListener("click", function(){
+  toggleDisplay(faqAnswer4)
+})
+
+function toggleDisplay(answer) {
+  let currentDisplay = window.getComputedStyle(answer).display
+  if (currentDisplay == "none"){
+    answer.style.display = "block"
+  }
+  else {
+    answer.style.display = "none"
+  }
+}

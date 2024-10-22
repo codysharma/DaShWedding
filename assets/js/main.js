@@ -413,34 +413,38 @@ let faqAnswer3 = document.getElementById("faqAnswer3");
 let faqAnswer4 = document.getElementById("faqAnswer4");
 let faqArrowUp1 = document.getElementById("faqArrowUp1");
 let faqArrowUp2 = document.getElementById("faqArrowUp2");
-let faqArrowUp3 = document.getElementById("faqArrow3Up");
-let faqArrowUp4 = document.getElementById("faqArrow4Up");
+let faqArrowUp3 = document.getElementById("faqArrowUp3");
+let faqArrowUp4 = document.getElementById("faqArrowUp4");
 let faqArrowDown1 = document.getElementById("faqArrowDown1");
 let faqArrowDown2 = document.getElementById("faqArrowDown2");
-let faqArrowDown3 = document.getElementById("faqArrow3Down");
-let faqArrowDown4 = document.getElementById("faqArrow4Down");
+let faqArrowDown3 = document.getElementById("faqArrowDown3");
+let faqArrowDown4 = document.getElementById("faqArrowDown4");
 
 faqQuestion1.addEventListener("click", function(){
-  toggleDisplay(faqAnswer1)
+  toggleDisplay(faqAnswer1, faqArrowDown1, faqArrowUp1)
 })
 
 faqQuestion2.addEventListener("click", function(){
-  toggleDisplay(faqAnswer2)
+  toggleDisplay(faqAnswer2, faqArrowDown2, faqArrowUp2)
 })
 
 faqQuestion3.addEventListener("click", function(){
-  toggleDisplay(faqAnswer3)
+  toggleDisplay(faqAnswer3, faqArrowDown3, faqArrowUp3)
 })
 faqQuestion4.addEventListener("click", function(){
-  toggleDisplay(faqAnswer4)
+  toggleDisplay(faqAnswer4, faqArrowDown4, faqArrowUp4)
 })
 
-function toggleDisplay(answer) {
+function toggleDisplay(answer, arrowDown, arrowUp) {
   let currentDisplay = window.getComputedStyle(answer).display
   if (currentDisplay == "none"){
     answer.style.display = "block"
+    arrowDown.style.display = "none"
+    arrowUp.style.display = "inline"
   }
   else {
     answer.style.display = "none"
+    arrowDown.style.display = "inline"
+    arrowUp.style.display = "none"
   }
 }

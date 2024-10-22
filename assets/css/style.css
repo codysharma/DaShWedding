@@ -2283,12 +2283,6 @@ color: darkgrey;
   display: none;
 }
 
-#faqArrow1:hover {
-  /* cursor: pointer;
-  transform: scale(1.1);
-  transition: 0.2s ease-in-out; */
-}
-
 .faqQuestion {
   cursor: pointer;
 }

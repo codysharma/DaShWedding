@@ -170,6 +170,7 @@ h6 {
   padding: 0;
   position: static;
   display: none;
+  max-width: 90%;
 }
 
 .navbar ul {
@@ -180,9 +181,9 @@ h6 {
   align-items: center;
 }
 
-.navbar li {
+/* .navbar li {
   position: relative;
-}
+} */
 
 .navbar a,
 .navbar a:focus {
@@ -349,9 +350,9 @@ h6 {
   .navbar ul {
     display: none;
   }
-  #logo-graphic {
+  /* #logo-graphic {
     display: none;
-  }
+  } */
   #logo-text {
     font-size: larger;
   }
@@ -2097,36 +2098,6 @@ color: darkgrey;
 .mobileAboutUsPictures {
   max-width: 60px;
   /* padding-left: 10%; */
-}
-
-@media (width < 1700px) {
-  #contact-link {
-    display: none;
-  }
-}
-
-@media (width < 1500px) {
-  #faqs-link {
-    display: none;
-  }
-}
-
-@media (width < 1300px) {
-  #gifts-link {
-    display: none;
-  }
-}
-
-@media (width < 1250px) {
-  #schedule-link {
-    display: none;
-  }
-}
-
-@media (width < 1100px) {
-  #travel-link {
-    display: none;
-  }
 }
 
 @media (width < 1800px) {
